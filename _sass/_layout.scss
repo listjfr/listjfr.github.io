@@ -1,6 +1,22 @@
 /**
  * Site header
  */
+
+
+.blocks {
+    height: 100px;
+    width: 100px;
+    radius: 100%;
+    
+    .color1 {
+        color: LightPink;
+    }
+    
+    .color2 {
+        color: LightSalmon;
+    }
+}
+
 .site-header {
     border-top: 100px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
