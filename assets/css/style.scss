@@ -9,3 +9,9 @@
   background-color: LightYellow;
   
   }
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "layout",
+        "syntax-highlighting";
