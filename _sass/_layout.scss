@@ -3,7 +3,8 @@
  */
 .navigation {
     display: inline-block;
-    align: center;
+    align: center;'
+    position: relative;
 }
 
 div {
@@ -12,6 +13,7 @@ div {
     border-radius: 5px;
     background-color: LightSalmon;
     display: inline-block;
+    position: relative;
 }
 
 .site-header {
