@@ -6,10 +6,10 @@
     float: left;
 }
 
-.blocks {
+div {
     height: 100px;
     width: 100px;
-    radius: 100%;
+    border-radius: 100%;
     
     .color1 {
         background-color: LightPink;
@@ -29,7 +29,7 @@
 }
 
 .site-header {
-    border-top: 100px solid $grey-color-dark;
+    border-top: 1px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 50px;
 
