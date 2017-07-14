@@ -13,3 +13,36 @@
 @import
         "layout",
         "syntax-highlighting";
+
+
+.navigation {
+    display: inline-block;
+    align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.blocks {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    
+    .color1 {
+        background-color: PeachPuff;
+    }
+    
+    .color2 {
+        background-color: Moccasin;
+    }
+    
+    .color3 {
+        background-color: LemonChiffon;
+    }
+    
+    .color4 {
+        background-color: PapayaWhip;
+    }
+}
