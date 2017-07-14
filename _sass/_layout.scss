@@ -1,7 +1,10 @@
 /**
  * Site header
  */
-
+.navigation {
+    display: inline-block;
+    float: left;
+}
 
 .blocks {
     height: 100px;
@@ -14,6 +17,14 @@
     
     .color2 {
         color: LightSalmon;
+    }
+    
+    .color3 {
+        color: blue;
+    }
+        
+    .color4 {
+        color: green;
     }
 }
 
