@@ -1,7 +1,6 @@
 * {
-    font-family: TimesNewRoman, serif;
+    font-family: Helvetica, sans-serif;
     font-color: black;
-    font-size: 12px;
 }
 
 .navigation {
@@ -15,8 +14,23 @@
     height: 100px;
     width: 100px;
     border-radius: 5px;
-    background-color: LightSalmon;
     display: inline-block;
     position: relative;
     padding: 5px;
+    
+    .color1 {
+        background-color: PeachPuff;
+    }
+    
+    .color2 {
+        background-color: Moccasin;
+    }
+    
+    .color3 {
+        background-color: LemonChiffon;
+    }
+    
+    .color4 {
+        background-color: PapayaWhip;
+    }
 }
