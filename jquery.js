@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.blocks').click(function() {
+  $('.navgation').click(function() {
     $(this).fadeTo('slow', 0);
   });
 
