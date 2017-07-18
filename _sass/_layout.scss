@@ -40,7 +40,8 @@ body {
     background-position: center center
 }
 
-p {
+.content {
     background-color: white;
     opacity: 0.2;
+    max-width: 300px;
 }
