@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('.navgation').click(function() {
-    $(this).fadeTo('slow', 0);
+  $('.navgation').hover(function() {
+    $(this).toggleClass("select");
   });
 
 
