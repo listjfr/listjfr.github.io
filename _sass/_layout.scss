@@ -1,54 +1,12 @@
-head {
-    position: fixed;
+body {
+  margin: 5%;
 }
 
-#title {
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-}
-
-.navigation {
+div {
+    background-color: lightsalmon;
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    margin: 5px;
     display: inline-block;
-    text-align: center;
-    padding: 1px;
-    width: 33%;  
-    margin: auto
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-h3 {
-    text-align: center;
-}
-
-.source {
-    font-size: 8px;
-    font-weight: bold;
-}
-
-a {
-    color: black;
-}
-
-.li:hover {
-    background-color: WhiteSmoke;
-}
-
-.content {
-    background-image: url("https://scstylecaster.files.wordpress.com/2016/10/succulents-guide-feat.jpg");
-    background-repeat: repeat-y;
-    background-position: center top;
-    width: 100%;
-}
-
-.box {
-    background-color: white;
-    opacity: 0.8;
-    width: 60%;
-    position: relative;
-    left: 20%;
-    padding: 5px 10px;
 }
