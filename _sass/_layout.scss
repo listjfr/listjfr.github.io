@@ -15,10 +15,8 @@ body {
 .buttons {
   width: 100%;
   padding-bottom: 10px;
-  padding-left: 20%;
-  padding-right: 20%;
   display: inline-block;
-  border-color: black;
+  border: 1px solid black;
   
   button {
     border: 1px solid black;
@@ -29,12 +27,12 @@ body {
 
 #pinkScheme {
   float: left;
-  margin-right: 10%;
+  margin-right: 125%;
 }
   
 #blueScheme {
   float: right;
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 .squares div {
