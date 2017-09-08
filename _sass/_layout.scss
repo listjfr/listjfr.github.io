@@ -2,35 +2,67 @@ body {
   margin: 5%;
 }
 
-.squares div {
+.pink {
+  width: 100%;
+  
+  div {
     height: 100px;
     width: 100px;
     border-radius: 10%;
     margin: 5px;
     display: inline-block;
-}
-
-.squares {
-  width: 100%;
-}
-
-#one {
-    background-color: mistyrose;
-}
-
-#two {
-  background-color: snow;
-}
-
-#three {
-  background-color: oldlace;
-}
-
-#four {
-  background-color: lavenderblush;
-}
-
-#five {
-  background-color: linen;
-}
+  }
   
+  #one {
+    background-color: mistyrose;
+  }
+
+  #two {
+    background-color: snow;
+  }
+
+  #three {
+    background-color: oldlace;
+  }
+
+  #four {
+    background-color: lavenderblush;
+  }
+
+  #five {
+    background-color: linen;
+  }
+}
+
+
+.blue {
+  width: 100%;
+  
+  div {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  #one {
+    background-color: powderblue;
+  }
+
+  #two {
+    background-color: azure;
+  }
+
+  #three {
+    background-color: beige;
+  }
+
+  #four {
+    background-color: darkturqoise;
+  }
+
+  #five {
+    background-color: linen;
+  }
+}
