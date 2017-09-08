@@ -10,6 +10,12 @@ h1 a {
 
 body {
   width: 90%;
+}
+
+.buttons button {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
   
   #pinkScheme {
     margin-right: 30%;
@@ -18,12 +24,6 @@ body {
   #blueScheme {
     margin-left: 30%;
   }
-}
-
-.buttons button {
-  border: 1px solid black;
-  background-color: white;
-  color: black;
 }
 
 .pink {
