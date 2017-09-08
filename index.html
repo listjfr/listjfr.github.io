@@ -10,9 +10,13 @@ layout: default
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
+                        $(".squares").removeClass("pink");
+                        $(".squares").addClass("blue");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
+                        $(".squares").removeClass("blue");
+                        $(".squares").addClass("pink");
                     },
                     click: function () {
                         $(this).fadeTo("fast", 0);    
