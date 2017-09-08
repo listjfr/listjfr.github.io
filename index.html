@@ -10,7 +10,7 @@ layout: default
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
-                        $(this).text("im not so good at this").fadeIn("fast");
+                        $(this).append("im not so good at this").fadeIn("fast");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
