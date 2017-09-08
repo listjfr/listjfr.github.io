@@ -9,16 +9,24 @@ layout: default
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
-                        $(this).text("hi");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
-                        $(this).text().hide();
                     },
                     click: function () {
                         $(this).fadeTo("slow", 0);    
                     }
-                    
+
+                });
+                
+                $("#pinkScheme").click(function() {
+                    $(".squares").removeClass("blue");
+                    $(".squares").addClass("pink");
+                });
+                
+                $("#blueScheme").click(function() {
+                    $(".squares").removeClass("pink");
+                    $(".squares").addClass("blue");
                 });
             });
     </script>
@@ -29,7 +37,7 @@ layout: default
     <button type="button" id="blueScheme">Blue Color Scheme</button>
 </div>
 
-<div class="pink">
+<div class="pink squares">
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div>
