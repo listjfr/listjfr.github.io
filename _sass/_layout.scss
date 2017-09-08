@@ -2,11 +2,11 @@ body {
   margin: 5%;
 }
 
-body.div {
+.squares {
     background-color: lightsalmon;
     height: 100px;
     width: 100px;
     border-radius: 10%;
     margin: 5px;
-    display: inline;
+    display: inline-block;
 }
