@@ -14,8 +14,10 @@ layout: default
                         $(this).fadeTo("slow", 1);
                     },
                     click: function () {
-                        $(this).fadeTo("slow", 0);
-                        $(this).text("hello");
+                        $(this).fadeTo("slow", 0, function() {
+                            $(this).text("Hello").fadeToggle("fast")
+                        });
+                        
                     }
                     
                 });
