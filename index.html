@@ -7,16 +7,18 @@ layout: default
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
             $(document).ready(function () {
+                $(div h1).hide();
+                  
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
-                        $(this).append("im not so good at this").fadeIn("fast");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
                     },
                     click: function () {
                         $(this).fadeTo("fast", 0);    
+                        $(this h1).toggle();
                     }
                 });
                 
@@ -43,7 +45,7 @@ layout: default
 </div>
 
 <div class="pink squares">
-    <div id="one"></div>
+    <div id="one"><h1>theyre taking the hobbits to isengard</h1></div>
     <div id="two"></div>
     <div id="three"></div>
     <div id="four"></div>
