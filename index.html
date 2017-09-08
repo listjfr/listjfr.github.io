@@ -9,15 +9,14 @@ layout: default
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
+                        $(this).text("hi");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
+                        $(this).text().hide();
                     },
                     click: function () {
-                        $(this).fadeTo("slow", 0, function() {
-                            $(this).text("Hello")
-                        }).fadeToggle("fast");
-                        
+                        $(this).fadeTo("slow", 0);    
                     }
                     
                 });
