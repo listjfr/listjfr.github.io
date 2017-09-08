@@ -10,6 +10,7 @@ layout: default
                 $(".squares div").on({
                     mouseenter: function () {
                         $(this).fadeTo("slow", 0.2);
+                        $(this).text("im not so good at this").fadeIn("fast");
                     },
                     mouseleave: function () {
                         $(this).fadeTo("slow", 1);
@@ -30,7 +31,7 @@ layout: default
                 });
                 
                 $("#one").click(function() {
-                    $(this).text("i hate css").fadeIn("fast");
+                    
                 });
             });
     </script>
