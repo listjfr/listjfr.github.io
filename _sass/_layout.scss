@@ -26,11 +26,13 @@ body {
 }
 
 #pinkScheme {
-  float: right;
+  float: left;
+  margin-right: 10%;
 }
   
 #blueScheme {
-  float: left;
+  float: right;
+  margin-left: 10%;
 }
 
 .squares div {
