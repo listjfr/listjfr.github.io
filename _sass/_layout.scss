@@ -11,6 +11,7 @@ h1 a {
 body {
   width: 90%;
   text-align: center;
+  border: 1px solid black;
 }
 
 .buttons {
@@ -46,6 +47,7 @@ body {
     width: 100px;
     border-radius: 10%;
     display: inline-block;
+    border: 1px solid black;
   }
   
   .one {
