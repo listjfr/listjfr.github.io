@@ -117,10 +117,14 @@ body {
   visibility: hidden;
   border: 1px solid black;
   padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  
   button {
     border: 1px solid black;
     text-decoration: none;
     color: black;
+    background-color: white;
     display: block;
     padding: 5px;
   }
