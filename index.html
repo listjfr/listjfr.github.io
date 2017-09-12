@@ -15,9 +15,20 @@ layout: default
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    $(this).fadeTo("fast", 0);
+                    if($(this).text() == "text") {
+                        $(this).fadeTo("slow", 0)
+                        .text("")
+                        .removeClass("white")
+                        .addClass(".one .two .three .four .five")
+                        .fadeTo("slow", 1);
+                    }
+                    else {
+                        $(this).fadeTo("slow", 0)
+                        .removeClass(".one .two .three .four .five")
+                        .addClass("white")
+                        .text("text").fadeTo("slow", 1);    
+                    }
                 },
-            });
 
             $("#pinkScheme").click(function () {
                 $(".squares").removeClass("blue");
