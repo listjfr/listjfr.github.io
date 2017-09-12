@@ -17,8 +17,10 @@ layout: default
                 click: function () {
                     $(this).fadeTo("fast", 0);
                     $(this).toggle(function() {
-                        $(this).text("text");
-                    });
+                        $(this).text("hide text");
+                        }, function() {
+                        $(this).text("");
+                        });
                 }
             });
 
