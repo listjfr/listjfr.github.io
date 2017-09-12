@@ -13,14 +13,11 @@ layout: default
                 },
                 mouseleave: function () {
                     $(this).fadeTo("slow", 1);
+                    $(this).text("");
                 },
                 click: function () {
                     $(this).fadeTo("fast", 0);
-                    $(this).toggle(function() {
-                        $(this).text("hide text");
-                        }, function() {
-                        $(this).text("");
-                        });
+                    $(this).text("text");
                 }
             });
 
