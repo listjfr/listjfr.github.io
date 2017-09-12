@@ -105,10 +105,13 @@ body {
 .dropdown-contents {
   visibility: hidden;
   border: 1px solid black;
+  padding: 5px;
   a {
     border: 1px solid black;
     text-decoration: none;
     color: black;
+    display: block;
+    padding: 5px;
   }
 }
 
