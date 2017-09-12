@@ -9,9 +9,10 @@ permalink: /colorpicker/
     $(document).ready(function() {
       $(".dropdown-content").hide();
       $(".dropbtn").hover(function() {
-        $(this).show;
+        $(.dropdown-content).show;
       });
-      $(".dropdown-content ul li").click(function() {
+      
+      $(".dropdown-content button").click(function() {
         if($(this).text() == "black") {
           $("#color1 div").css("background color", "black");
         }
@@ -41,10 +42,8 @@ permalink: /colorpicker/
     <div class="dropdown">
       <button class="dropbtn">Select Color</button>
       <div class="dropdown-content">
-        <ul>
-          <li id="black">black</li>
-          <li id="white">white</li>
-        </ul>
+        <button id="black">black</button>
+        <button id="white">white</button>
       </div>
     </div>
   </div>
