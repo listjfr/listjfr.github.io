@@ -105,8 +105,23 @@ body {
 .dropdown-contents {
   visibility: hidden;
   border: 1px solid black;
-  
   a {
     border: 1px solid black;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.block {
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  vertical-align: top;
+  
+ #color1,#color2,#color3,#color4,#color5 {
+   height: 100px;
+   width: 100px;
+   border-radius: 10%;
+   border: 1px solid black;
   }
 }
