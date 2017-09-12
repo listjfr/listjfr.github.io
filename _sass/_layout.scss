@@ -33,7 +33,8 @@ body {
   }
 }
 
-.squares div {
+.squares {
+  div {
   text-align: center;
   height: 100px;
   width: 100px;
@@ -41,6 +42,12 @@ body {
   display: inline-block;
   margin: 5px;
   vertical-align: top;
+  }
+  
+  p {
+    display: inline-block;
+    margin: 0 auto;
+  }
 }
 
 .pink {
