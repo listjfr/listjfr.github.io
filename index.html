@@ -5,32 +5,7 @@ layout: default
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link type="text/scss" href="/assets/css/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-            $(document).ready(function () { 
-                $(".squares div").on({
-                    mouseenter: function () {
-                        $(this).fadeTo("slow", 0.2);
-                    },
-                    mouseleave: function () {
-                        $(this).fadeTo("slow", 1);
-                    },
-                    click: function () {
-                        $(this).fadeTo("fast", 0);  
-                    }
-                });
-                
-                $("#pinkScheme").click(function() {
-                    $(".squares").removeClass("blue");
-                    $(".squares").addClass("pink");
-                });
-                
-                $("#blueScheme").click(function() {
-                    $(".squares").removeClass("pink");
-                    $(".squares").addClass("blue");
-                });
-                
-            });
-    </script>
+    <script src="/jquery.js"></script>
 </div>
 
 <div class="buttons">
