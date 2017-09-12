@@ -8,7 +8,7 @@ permalink: /colorpicker/
   <script class="jquery">
     $(document).ready(function() {
       $(".dropdown").mouseenter(function() {
-        $("this .dropdown-contents").css("visibility", "visible");
+        $(".dropdown-contents this").css("visibility", "visible");
       });
       $(".dropdown-contents").mouseleave(function() {
         $("this").css("visibility", "hidden");
