@@ -102,6 +102,16 @@ body {
   }
 }
 
+.dropdown {
+  border: 1px solid black;
+  padding: 5px;
+  
+  :hover {
+    background-color: gray;
+    color:white;
+  }
+}
+
 .dropdown-contents {
   visibility: hidden;
   border: 1px solid black;
