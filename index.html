@@ -9,16 +9,19 @@ layout: default
         $(document).ready(function () {
             $(".squares div").on( {
                 mouseenter: function () {
-                    $(this).fadeTo("slow", 0.2);
+                    $(this).fadeTo("slow", 0.5);
                 },
                 mouseleave: function () {
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    $(this).fadeTo("fast", 0, function() {
+                    $(this).fadeTo("fast", 0.2, function() {
                         $(this).text("texttt").fadeIn()
-	                    });
-                }
+	            });
+                },
+		dblclick: function() {
+			$(this).text().fadeOut();
+		}
             });
 
             $("#pinkScheme").click(function () {
