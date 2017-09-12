@@ -6,7 +6,22 @@ permalink: /colorpicker/
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script class="jquery">
-    
+    $(document).ready(function() {
+      $(".dropdown-content").hide();
+      $(".dropbtn").hover(function() {
+        $(this).show;
+      });
+      $(".dropdown-content ul li").click(function() {
+        if($(this).text() == "black") {
+          $("#color1 div").css("background color", "black");
+        }
+        else {
+         $("#color1 div").css("background color", "white");
+        }
+        
+      });
+      
+    });
   </script>
 </div>
 
