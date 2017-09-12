@@ -105,10 +105,11 @@ body {
 .dropdown {
   border: 1px solid black;
   padding: 5px;
+  background-color: black;
+  color: white;
   
   :hover {
     background-color: gray;
-    color:white;
   }
 }
 
