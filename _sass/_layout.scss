@@ -14,12 +14,6 @@ body {
   text-align: center;
 }
 
-p {
-  text-align: center;
-  margin: 0 auto;
-  border: 1px solid black;
-  vertical-align: middle;
-}
 
 .buttons {
   width: 100%;
@@ -44,19 +38,16 @@ p {
 
 .squares div {
   text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 5px;
+  vertical-align: top;
 }
 
 .pink {
   width: 100%;
-  
-  div {
-    height: 100px;
-    width: 100px;
-    border-radius: 10%;
-    display: inline-block;
-    border: 1px solid black;
-    margin: 5px;
-  }
   
   .one {
     background-color: mistyrose;
@@ -82,14 +73,6 @@ p {
 
 .blue {
   width: 100%;
-  
-  div {
-    height: 100px;
-    width: 100px;
-    border-radius: 10%;
-    margin: 5px;
-    display: inline-block;
-  }
   
   .one {
     background-color: powderblue;
