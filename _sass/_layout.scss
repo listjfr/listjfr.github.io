@@ -101,3 +101,12 @@ body {
     background-color: linen;
   }
 }
+
+.dropdown-contents {
+  visibility: hidden;
+  border: 1px solid black;
+  
+  a {
+    border: 1px solid black;
+  }
+}
