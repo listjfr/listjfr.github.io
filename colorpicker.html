@@ -10,7 +10,7 @@ permalink: /colorpicker/
       $(".dropdown").mouseenter(function() {
         $(".dropdown-contents").css("visibility", "visible");
       });
-      $(".dropdown").mouseleave(function() {
+      $(".dropdown,.dropdown-contents").mouseleave(function() {
         $(".dropdown-contents").css("visibility", "hidden");
       });
       $(".dropdown-contents a").click(function() {
