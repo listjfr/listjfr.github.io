@@ -18,14 +18,10 @@ layout: default
                     if($(this).text() == "text") {
                         $(this).fadeTo("slow", 0)
                         .text("")
-                        .removeClass("white")
-                        .addClass(".one .two .three .four .five")
                         .fadeTo("slow", 1);
                     }
                     else {
                         $(this).fadeTo("slow", 0)
-                        .removeClass(".one .two .three .four .five")
-                        .addClass("white")
                         .text("text").fadeTo("slow", 1);    
                     }
                 }
