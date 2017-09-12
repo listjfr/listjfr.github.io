@@ -13,12 +13,12 @@ layout: default
                 },
                 mouseleave: function () {
                     $(this).fadeTo("slow", 1);
-                    $(this).text("");
                 },
                 click: function () {
-                    $(this).fadeTo("fast", 0);
-                    $(this).text("text");
-                }
+                    $(this).fadeTo("fast", 0, function() {
+                        $(this).text("World").fadeIn()
+	                    });
+                    });
             });
 
             $("#pinkScheme").click(function () {
