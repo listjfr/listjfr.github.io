@@ -7,7 +7,9 @@ permalink: /colorpicker/
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script class="jquery">
     $(document).ready(function() {
-
+      $(".dropdown").mouseenter(function() {
+        $(".dropdown-contents").css("visibility", "visible");
+      });
       
     });
   </script>
@@ -32,7 +34,7 @@ permalink: /colorpicker/
     <p>Color 2</p>
     <div class="color"></div>
     <button class="dropdown">Pick color</button>
-    <div class="dropdow-contents">
+    <div class="dropdown-contents">
       <a href="#">black</a>
       <a href="#">white</a>
     </div>
