@@ -84,6 +84,11 @@ permalink: /colorpicker/
         alert("New color scheme saved! Return to homepage to view custom scheme.");
         });
       
+      $("#clearButton").click(function() {
+        localStorage.clear();
+        alert("Custom color scheme cleared!);
+      });
+      
     });
   </script>
 </div>
@@ -93,6 +98,7 @@ permalink: /colorpicker/
 <div class="buttons">
   <button type="button" id="backButton"><a href="https://listjfr.github.io"> < Back </a></button>
   <button type="button" id="customButton">Save to Custom Color Scheme</button>
+  <button type="button" id="clearButton">Clear Custom Color Scheme</button>
 </div>
   
 <div class="palette">
