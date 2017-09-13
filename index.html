@@ -29,12 +29,14 @@ layout: default
             });
 
             $("#pinkScheme").click(function () {
-                $(".squares").removeClass("blue custom").removeAttr("style");
+                $(".squares").removeClass("blue custom");
+                $(".custom, .one, .two, .three, .four, .five").removeAttr("style");
                 $(".squares").addClass("pink");
             });
 
             $("#blueScheme").click(function () {
-                $(".squares").removeClass("pink custom").removeAttr("style");
+                $(".squares").removeClass("pink custom");
+                $(".custom, .one, .two, .three, .four, .five").removeAttr("style");
                 $(".squares").addClass("blue");
             });
             
