@@ -8,10 +8,10 @@ permalink: /colorpicker/
   <script class="jquery">
     $(document).ready(function() {
       $(".dropdown").mouseenter(function() {
-        $(".dropdown-contents").css("visibility", "visible");
+        $(".dropdown-contents", this).css("visibility", "visible");
       });
       $(".dropdown-contents").mouseleave(function() {
-        $(".dropdown-contents").css("visibility", "hidden");
+        $(".dropdown-contents", this).css("visibility", "hidden");
       });
       $(".dropdown-contents button").click(function() {
         var newColor = $(this).text();
