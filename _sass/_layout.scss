@@ -117,6 +117,8 @@ body {
   border: 1px solid black;
   text-align: center;
   margin: 0 auto;
+  max-height: 250px;
+  overflow: auto;
   
   button {
     border: 1px solid black;
