@@ -37,6 +37,11 @@ layout: default
                 $(".squares").removeClass("pink");
                 $(".squares").addClass("blue");
             });
+            
+             $("#customScheme").click(function () {
+                $(".squares").removeClass("pink blue");
+                $(".squares").addClass("custom");
+            });
 
         });
     </script>
@@ -45,6 +50,7 @@ layout: default
 <div class="buttons">
     <button type="button" id="pinkScheme">Pink Color Scheme</button>
     <button type="button" id="blueScheme">Blue Color Scheme</button>
+    <button type="button" id="customScheme">Custom Color Scheme</button>
     <button type="button" id="colorScheme"><a href="https://listjfr.github.io/colorpicker/">Color Scheme Picker</a></button>
 </div>
 
