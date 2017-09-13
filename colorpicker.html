@@ -91,10 +91,10 @@ permalink: /colorpicker/
       
       $(".reference-colors").hover(function() {
         var colorName = $(this).css("background-color");
-        $(this).text(colorName).fadeIn();
+        $(this).attr('id').fadeTo(1);
       },
       function() {
-        $(this).text().fadeOut();
+        $(this).text().fadeTo(0);
       });
       
     });
