@@ -41,7 +41,7 @@ layout: default
              $("#customScheme").click(function () {
                 $(".squares").removeClass("pink blue");
                 $(".squares").addClass("custom");
-                $(".custom .one").css("background-color", localStorage["color1];
+                $(".custom .one").css("background-color", JSON.parse(localStorage.getItem("color1")));
                 $(".custom .two").css("background-color", localStorage["color2"];
                 $(".custom .three").css("background-color", localStorage["color3"];
                 $(".custom .four").css("background-color", localStorage["color4"];
