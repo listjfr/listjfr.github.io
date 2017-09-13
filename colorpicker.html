@@ -75,7 +75,7 @@ permalink: /colorpicker/
         var newColor4 = $("#color4").css("background-color");
         var newColor5 = $("#color5").css("background-color");
         
-        localStorage.setItem("color1", newColor1);
+        localStorage.setItem("color1", JSON.stringify(newColor1));
         localStorage.setItem("color2", newColor2);
         localStorage.setItem("color3", newColor3);
         localStorage.setItem("color4", newColor4);
