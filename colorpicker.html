@@ -89,6 +89,14 @@ permalink: /colorpicker/
         alert("Custom color scheme cleared!");
       });
       
+      $(".reference-colors").hover(function() {
+        var colorName = $(this).css("background-color");
+        $(this).text(colorName).fadeIn();
+      },
+      function() {
+        $(this).text().fadeOut();
+      });
+      
     });
   </script>
 </div>
