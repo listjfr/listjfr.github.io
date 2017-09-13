@@ -75,17 +75,17 @@ permalink: /colorpicker/
         var newColor4 = $("#color4").css("background-color");
         var newColor5 = $("#color5").css("background-color");
         
-        localStorage.setItem("color1", newColor1);
-        localStorage.setItem("color2", newColor2);
-        localStorage.setItem("color3", newColor3);
-        localStorage.setItem("color4", newColor4);
-        localStorage.setItem("color5", newColor5);
+        sessionStorage.setItem("color1", newColor1);
+        sessionStorage.setItem("color2", newColor2);
+        sessionStorage.setItem("color3", newColor3);
+        sessionStorage.setItem("color4", newColor4);
+        sessionStorage.setItem("color5", newColor5);
         
         alert("New color scheme saved! Return to homepage to view custom scheme.");
         });
       
       $("#clearButton").click(function() {
-        localStorage.clear();
+        sessionStorage.clear();
         alert("Custom color scheme cleared!");
       });
       
