@@ -14,12 +14,15 @@ permalink: /colorpicker/
         $(".dropdown-contents").css("visibility", "hidden");
       });
       $(".dropdown-contents button").click(function() {
-        if($(this).text()=="black") {
+        var newColor = $(this).text();
+        $("#color1").css("background-color", newColor);
+        /*if($(this).text()=="black") {
           $("#color1").css("background-color", "black");
         }
         else {
           $("#color1").css("background-color", "white");
-        }
+        }*/
+        
       });
     });
   </script>
