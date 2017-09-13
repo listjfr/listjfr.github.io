@@ -17,6 +17,7 @@ permalink: /colorpicker/
       $("#dropdown-contents1 button").click(function() {
         var newColor = $(this).text();
         $("#color1").css("background-color", newColor);
+        $("#dropdown1").text(newColor);
       });
       
       $("#dropdown2").mouseenter(function() {
