@@ -74,12 +74,28 @@ permalink: /colorpicker/
         var newColor3 = $("#color3").css("background-color");
         var newColor4 = $("#color4").css("background-color");
         var newColor5 = $("#color5").css("background-color");
+        
+        $('.custom .one')
+          .val(localStorage.getItem('newColor1'))
+          .change(function() {
+              $('.custom .one').css({'background-color': newColor1});
+              localStorage.setItem('newColor1', newColor1);
+          })
+          .change();
+        
+        $('.custom .two')
+          .val(localStorage.getItem('newColor2'))
+          .change(function() {
+              $('.custom .two').css({'background-color': newColor2});
+              localStorage.setItem('newColor2', newColor2);
+          })
+          .change();
       
-        $(".custom .one").css("background-color", newColor1);
+        /*$(".custom .one").css("background-color", newColor1);
         $(".custom .two").css("background-color", newColor2);
         $(".custom .three").css("background-color", newColor3);
         $(".custom .four").css("background-color", newColor4);
-        $(".custom .five").css("background-color", newColor5);
+        $(".custom .five").css("background-color", newColor5);*/
         
         alert("New color scheme saved! Return to homepage to view custom scheme.");
         });
