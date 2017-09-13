@@ -29,23 +29,23 @@ layout: default
             });
 
             $("#pinkScheme").click(function () {
-                $(".squares").removeClass("blue custom");
+                $(".squares").removeClass("blue custom").removeAttr("style");
                 $(".squares").addClass("pink");
             });
 
             $("#blueScheme").click(function () {
-                $(".squares").removeClass("pink custom");
+                $(".squares").removeClass("pink custom").removeAttr("style");
                 $(".squares").addClass("blue");
             });
             
              $("#customScheme").click(function () {
                 $(".squares").removeClass("pink blue");
                 $(".squares").addClass("custom");
-                $(".custom .one").css("background-color", localStorage.getItem("color1"));
-                $(".custom .two").css("background-color", localStorage.getItem("color2"));
-                $(".custom .three").css("background-color", localStorage.getItem("color3"));
-                $(".custom .four").css("background-color", localStorage.getItem("color4"));
-                $(".custom .five").css("background-color", localStorage.getItem("color5"));                      
+                $(".custom .one").attr("style", "background-color:" + localStorage.getItem("color1"));
+                $(".custom .two").attr("style", "background-color:" + localStorage.getItem("color2"));
+                $(".custom .three").attr("style", "background-color:" + localStorage.getItem("color3"));
+                $(".custom .four").attr("style", "background-color:" + localStorage.getItem("color4"));
+                $(".custom .five").attr("style", "background-color:" + localStorage.getItem("color5"));                      
             });
 
         });
