@@ -7,13 +7,13 @@ permalink: /colorpicker/
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script class="jquery">
     $(document).ready(function() {
-      $(".dropdown").mouseenter(function() {
-        $(".dropdown-contents").css("visibility", "visible");
+      $("#dropdown1").mouseenter(function() {
+        $("#dropdown-contents1").css("visibility", "visible");
       });
-      $(".dropdown-contents").mouseleave(function() {
-        $(".dropdown-contents").css("visibility", "hidden");
+      $("#dropdown-contents1").mouseleave(function() {
+        $("#dropdown-contents1").css("visibility", "hidden");
       });
-      $(".dropdown-contents button").click(function() {
+      $("#dropdown-contents1 button").click(function() {
         var newColor = $(this).text();
         $("#color1").css("background-color", newColor);
       });
@@ -35,8 +35,8 @@ permalink: /colorpicker/
   <div class="block">
     <p>Color 1</p>
     <div id="color1"></div>
-    <button class="dropdown">Pick color</button>
-    <div class="dropdown-contents">
+    <button class="dropdown" id="dropdown1">Pick color</button>
+    <div class="dropdown-contents" id="dropdown-contents1">
       <button>AliceBlue</button>
       <button>AntiqueWhite</button>
       <button>Aqua</button>
