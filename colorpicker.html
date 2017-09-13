@@ -90,8 +90,9 @@ permalink: /colorpicker/
       });
       
       $(".reference-colors").hover(function() {
-        var colorName = $(this).css("background-color");
-        $(this).attr('id').fadeTo(1);
+        //var colorName = $(this).css("background-color");
+        var colorName = $(this).attr('id');
+        $(this).text(colorName).fadeTo(1);
       },
       function() {
         $(this).text().fadeTo(0);
