@@ -176,6 +176,14 @@ body {
 
 .reference-container {
   border: 1px solid black;
+  .reference-colors {
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+  }
   
     #AliceBlue { background-color: AliceBlue; }
     #AntiqueWhite { background-color: AntiqueWhite; }
