@@ -43,11 +43,11 @@ layout: default
              $("#customScheme").click(function () {
                 $(".squares").removeClass("pink blue");
                 $(".squares").addClass("custom");
-                $(".custom .one").attr("style", "background-color:" + localStorage.getItem("color1"));
-                $(".custom .two").attr("style", "background-color:" + localStorage.getItem("color2"));
-                $(".custom .three").attr("style", "background-color:" + localStorage.getItem("color3"));
-                $(".custom .four").attr("style", "background-color:" + localStorage.getItem("color4"));
-                $(".custom .five").attr("style", "background-color:" + localStorage.getItem("color5"));                      
+                $(".custom .one").attr("style", "background-color:" + sessionStorage.getItem("color1"));
+                $(".custom .two").attr("style", "background-color:" + sessionStorage.getItem("color2"));
+                $(".custom .three").attr("style", "background-color:" + sessionStorage.getItem("color3"));
+                $(".custom .four").attr("style", "background-color:" + sessionStorage.getItem("color4"));
+                $(".custom .five").attr("style", "background-color:" + sessionStorage.getItem("color5"));                      
             });
 
         });
