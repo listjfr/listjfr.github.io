@@ -68,6 +68,20 @@ permalink: /colorpicker/
         $("#dropdown5").text(newColor);
       });
       
+      $("#customButton").click(function() {
+        var newColor1 = $("#color1").css("background-color");
+        var newColor2 = $("#color2").css("background-color");
+        var newColor3 = $("#color3").css("background-color");
+        var newColor4 = $("#color4").css("background-color");
+        var newColor5 = $("#color5").css("background-color");
+      
+        $(".custom .one").css("background-color", newColor1);
+        $(".custom .two").css("background-color", newColor2);
+        $(".custom .three").css("background-color", newColor3);
+        $(".custom .four").css("background-color", newColor4);
+        $(".custom .five").css("background-color", newColor5);
+        });
+      
     });
   </script>
 </div>
@@ -76,6 +90,7 @@ permalink: /colorpicker/
 
 <div class="buttons">
   <button type="button" id="backButton"><a href="https://listjfr.github.io"> < Back </a></button>
+  <button type="button" id="customButton">Save to Custom Color Scheme</button>
 </div>
   
 <div class="palette">
