@@ -36,7 +36,10 @@ body {
 
 .textInput { 
   vertical-align: top;
-  h4,input { display: inline-block; } 
+  h4,input { 
+    display: inline-block;
+    vertical-align: top;
+  } 
 }
 
 .squares {
