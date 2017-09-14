@@ -7,6 +7,9 @@ permalink: /colorpicker/
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script class="jquery">
     $(document).ready(function() {
+      //show current saved color scheme
+      $("#currentColor").text("Current Color Scheme: " + sessionStorage.getItem("color1") + ", " + sessionStorage.getItem("color2") + ", " + sessionStorage.getItem("color3") + ", " + sessionStorage.getItem("color4") + ", " + sessionStorage.getItem("color5") );
+      
       //dropdown menu for picking colors
       $("#dropdown1").mouseenter(function() {
         $("#dropdown-contents1").css("visibility", "visible");
@@ -150,6 +153,7 @@ permalink: /colorpicker/
 </div>
 
 <h3 id="heading">CSS Color Scheme Picker</h3>
+<h4 id="currentColors"></h4>
 
 <div class="buttons">
   <button type="button" id="backButton"><a href="https://listjfr.github.io"> < Back </a></button>
