@@ -22,13 +22,11 @@ body {
   padding-bottom: 10px;
   display: inline-block;
   text-align: center;
-  
   button {
     border: 1px solid black;
     background-color: white;
     color: black;
     margin: 0 auto;
-    
     a {
       text-decoration: none;
       color: black;
@@ -60,23 +58,18 @@ body {
 
 .pink {
   width: 100%;
-  
   .one {
     background-color: mistyrose;
   }
-
   .two {
     background-color: snow;
   }
-
   .three {
     background-color: oldlace;
   }
-
   .four {
     background-color: lavenderblush;
   }
-
   .five {
     background-color: linen;
   }
@@ -85,23 +78,18 @@ body {
 
 .blue {
   width: 100%;
-  
   .one {
     background-color: powderblue;
   }
-
   .two {
     background-color: azure;
   }
-
   .three {
     background-color: floralwhite;
   }
-
   .four {
     background-color: darkturquoise;
   }
-
   .five {
     background-color: linen;
   }
@@ -109,23 +97,18 @@ body {
 
 .custom {
   width: 100%;
-  
   .one {
     background-color: none;
   }
-
   .two {
     background-color: none;
   }
-
   .three {
     background-color: none;
   }
-
   .four {
     background-color: none;
   }
-
   .five {
     background-color: none;
   }
@@ -135,10 +118,6 @@ body {
   border: 1px solid black;
   background-color: black;
   color: white;
-  
-  :hover {
-    background-color: gray;
-  }
 }
 
 .dropdown-contents {
@@ -148,7 +127,6 @@ body {
   margin: 0 auto;
   max-height: 250px;
   overflow: auto;
-  
   button {
     border: 1px solid black;
     text-decoration: none;
@@ -167,12 +145,11 @@ body {
   display: inline-block;
   margin: 0 auto;
   vertical-align: top;
-  
- #color1,#color2,#color3,#color4,#color5 {
-   height: 100px;
-   width: 100px;
-   border-radius: 10%;
-   margin: 5px auto;
+  #color1,#color2,#color3,#color4,#color5 {
+     height: 100px;
+     width: 100px;
+     border-radius: 10%;
+     margin: 5px auto;
   }
 }
 
@@ -181,7 +158,6 @@ body {
   max-height: 1000px;
   min-height: 500px;
   overflow: auto;
-  
   .reference-colors {
     height: 150px;
     width: 150px;
@@ -190,7 +166,6 @@ body {
     vertical-align: top;
     text-shadow: 1px 1px white;
   }
-  
     #AliceBlue { background-color: AliceBlue; }
     #AntiqueWhite { background-color: AntiqueWhite; }
     #Aqua { background-color: Aqua; }
