@@ -7,7 +7,7 @@ permalink: /colorpicker/
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script class="jquery">
     $(document).ready(function() {
-      
+      //dropdown menu for picking colors
       $("#dropdown1").mouseenter(function() {
         $("#dropdown-contents1").css("visibility", "visible");
       });
@@ -68,6 +68,7 @@ permalink: /colorpicker/
         $("#dropdown5").text(newColor);
       });
       
+      //save custom color scheme
       $("#customButton").click(function() {
         var newColor1 = $("#color1").css("background-color");
         var newColor2 = $("#color2").css("background-color");
@@ -84,13 +85,89 @@ permalink: /colorpicker/
         alert("New color scheme saved! Return to homepage to view custom scheme.");
         });
       
+      //clear custom color scheme
       $("#clearButton").click(function() {
         sessionStorage.clear();
         alert("Custom color scheme cleared!");
       });
       
+      //color category buttons in reference section
+      $("#allColors").click(function() {
+        $(".reference-colors").css("display", "inline-block");
+      });
+      
+      $("#pinkColors").click(function() {
+        $(".pinks").css("display", "inline-block");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#redColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "inline-block");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#orangeColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "inline-block");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#yellowColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "inline-block");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#greenColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "inline-block");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#blueColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "inline-block");
+        $(".purples").css("display", "none");
+      });
+      
+      $("#purpleColors").click(function() {
+        $(".pinks").css("display", "none");
+        $(".reds").css("display", "none");
+        $(".oranges").css("display", "none");
+        $(".yellows").css("display", "none");
+        $(".greens").css("display", "none");
+        $(".blues").css("display", "none");
+        $(".purples").css("display", "inline-block");
+      });
+      
+      //hover to see reference color name
       $(".reference-colors").hover(function() {
-        //var colorName = $(this).css("background-color");
         var colorName = $(this).attr('id');
         $(this).text(colorName).fadeTo(1);
       },
