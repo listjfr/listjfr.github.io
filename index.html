@@ -13,6 +13,7 @@ layout: default
             //output input as text
             input.change(function() {
                 $("#yourText").text(input.val());
+                $("#yourText").css("visibility", "hidden");
             });
             
             //fading squares on hover/click
@@ -76,7 +77,7 @@ layout: default
 <div class="textInput">
     <h4>Your Text Here:</h4>
     <input></input>
-    <h4 id="yourText" hidden></h4>
+    <h4 id="yourText"></h4>
 </div>
 
 <div class="pink squares">
