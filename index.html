@@ -7,6 +7,16 @@ layout: default
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            //input as variable
+            var input = $("input");
+            var inputString = input.toString();
+            
+            //output input as text
+            input.change(function() {
+                $("#YourText").text(inputString);
+            });
+            
+            //fading squares on hover/click
             $(".squares div").on( {
                 mouseenter: function () {
                     $(this).fadeTo("slow", 0.2);
@@ -15,19 +25,21 @@ layout: default
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    if($(this).text() == $("input").text()) {
+                    if($(this).text() == inputString {
                         $(this).fadeTo("slow", 0)
                         .text("")
                         .fadeTo("slow", 1);
                     }
                     else {
                         $(this).fadeTo("slow", 0)
-                        .text($("input").text())
+                        .text(inputString)
                         .fadeTo("slow", 1);    
                     }
                 }
             });
-
+            
+            
+            //Change color scheme
             $("#pinkScheme").click(function () {
                 $(".squares").removeClass("blue custom");
                 $(".custom, .one, .two, .three, .four, .five").removeAttr("style");
@@ -40,6 +52,7 @@ layout: default
                 $(".squares").addClass("blue");
             });
             
+            //Change to saved custom color scheme 
              $("#customScheme").click(function () {
                 $(".squares").removeClass("pink blue");
                 $(".squares").addClass("custom");
@@ -62,6 +75,7 @@ layout: default
 </div>
 
 <input>Your Text Here</input>
+<h4 id="yourText"></h4>
 
 <div class="pink squares">
     <div class="one"></div>
