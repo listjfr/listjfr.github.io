@@ -15,14 +15,14 @@ layout: default
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    if($(this).text() == "hi") {
+                    if($(this).text() == $("input").text()) {
                         $(this).fadeTo("slow", 0)
                         .text("")
                         .fadeTo("slow", 1);
                     }
                     else {
                         $(this).fadeTo("slow", 0)
-                        .text("hi")
+                        .text($("input").text())
                         .fadeTo("slow", 1);    
                     }
                 }
