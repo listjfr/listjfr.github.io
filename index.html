@@ -8,13 +8,13 @@ layout: default
     <script>
         $(document).ready(function () {
             //input as variable
-            //var input = $("input");
-            //var inputString = input.val();
+            var input = $("input");
+            var inputString = input.val();
             
             //output input as text
-            /*input.change(function() {
+            input.change(function() {
                 $("#yourText").text(input.val());
-            });*/
+            });
             
             //fading squares on hover/click
             $(".squares div").on( {
@@ -25,7 +25,7 @@ layout: default
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    if($(this).text() == "hi" {
+                    if($(this).text() == "hi") {
                         $(this).fadeTo("slow", 0)
                         .text("")
                         .fadeTo("slow", 1);
