@@ -99,78 +99,41 @@ permalink: /colorpicker/
       $("#pinkColors").click(function() {
         $(".reference-colors").css("display", "none");
         $(".pinks").css("display", "inline-block");
-        /*$(".reds").css("display", "none");
-        $(".oranges").css("display", "none");
-        $(".yellows").css("display", "none");
-        $(".greens").css("display", "none");
-        $(".blues").css("display", "none");
-        $(".purples").css("display", "none");*/
       });
       
       $("#redColors").click(function() {
-        //$(".pinks").css("display", "none");
         $(".reference-colors").css("display", "none");
         $(".reds").css("display", "inline-block");
-        //$(".oranges").css("display", "none");
-        //$(".yellows").css("display", "none");
-        //$(".greens").css("display", "none");
-        //$(".blues").css("display", "none");
-        //$(".purples").css("display", "none");
       });
       
       $("#orangeColors").click(function() {
         $(".reference-colors").css("display", "none");
-        //$(".pinks").css("display", "none");
-        //$(".reds").css("display", "none");
         $(".oranges").css("display", "inline-block");
-        //$(".yellows").css("display", "none");
-        //$(".greens").css("display", "none");
-        //$(".blues").css("display", "none");
-        //$(".purples").css("display", "none");
       });
       
       $("#yellowColors").click(function() {
         $(".reference-colors").css("display", "none");
-        //$(".pinks").css("display", "none");
-        //$(".reds").css("display", "none");
-        //$(".oranges").css("display", "none");
         $(".yellows").css("display", "inline-block");
-        //$(".greens").css("display", "none");
-        //$(".blues").css("display", "none");
-        //$(".purples").css("display", "none");
       });
       
       $("#greenColors").click(function() {
         $(".reference-colors").css("display", "none");
-        //$(".pinks").css("display", "none");
-        //$(".reds").css("display", "none");
-        //$(".oranges").css("display", "none");
-        //$(".yellows").css("display", "none");
         $(".greens").css("display", "inline-block");
-        //$(".blues").css("display", "none");
-        //$(".purples").css("display", "none");
       });
       
       $("#blueColors").click(function() {
         $(".reference-colors").css("display", "none");
-        //$(".pinks").css("display", "none");
-        //$(".reds").css("display", "none");
-        //$(".oranges").css("display", "none");
-        //$(".yellows").css("display", "none");
-        //$(".greens").css("display", "none");
         $(".blues").css("display", "inline-block");
-        //$(".purples").css("display", "none");
       });
       
       $("#purpleColors").click(function() {
         $(".reference-colors").css("display", "none");
-        //$(".pinks").css("display", "none");
-        //$(".reds").css("display", "none");
-        //$(".oranges").css("display", "none");
-        //$(".yellows").css("display", "none");
-        //$(".greens").css("display", "none");
-        //$(".blues").css("display", "none");
         $(".purples").css("display", "inline-block");
+      });
+      
+      $("#greyColors").click(function() {
+        $(".reference-colors").css("display", "none");
+        $(".greys").css("display", "inline-block");
       });
       
       //hover to see reference color name
@@ -994,28 +957,29 @@ permalink: /colorpicker/
     <button id="greenColors">Green</button>
     <button id="blueColors">Blue</button>
     <button id="purpleColors">Purple</button>
+    <button id="greyColors">Grey</button>
   </div>
   
 <div class="reference-container">
     <div class="reference-colors blues" id="AliceBlue"></div>
-    <div class="reference-colors greys" id="AntiqueWhite"></div>
+    <div class="reference-colors yellows" id="AntiqueWhite"></div>
     <div class="reference-colors blues" id="Aqua"></div>
-    <div class="reference-colors blues" id="Aquamarine"></div>
+    <div class="reference-colors greens" id="Aquamarine"></div>
     <div class="reference-colors blues" id="Azure"></div>
-    <div class="reference-colors greys" id="Beige"></div>
-    <div class="reference-colors greys" id="Bisque"></div>
+    <div class="reference-colors yellows" id="Beige"></div>
+    <div class="reference-colors oranges" id="Bisque"></div>
     <div class="reference-colors greys" id="Black"></div>
-    <div class="reference-colors greys" id="BlanchedAlmond"></div>
+    <div class="reference-colors yellows" id="BlanchedAlmond"></div>
     <div class="reference-colors blues" id="Blue"></div>
     <div class="reference-colors purples" id="BlueViolet"></div>
-    <div class="reference-colors greys" id="Brown"></div>
-    <div class="reference-colors greys" id="BurlyWood"></div>
+    <div class="reference-colors reds" id="Brown"></div>
+    <div class="reference-colors yellows" id="BurlyWood"></div>
     <div class="reference-colors blues" id="CadetBlue"></div>
     <div class="reference-colors greens" id="Chartreuse"></div>
-    <div class="reference-colors greys" id="Chocolate"></div>
+    <div class="reference-colors oranges" id="Chocolate"></div>
     <div class="reference-colors oranges" id="Coral"></div>
     <div class="reference-colors blues" id="CornflowerBlue"></div>
-    <div class="reference-colors greys" id="Cornsilk"></div>
+    <div class="reference-colors yellows" id="Cornsilk"></div>
     <div class="reference-colors reds" id="Crimson"></div>
     <div class="reference-colors blues" id="Cyan"></div>
     <div class="reference-colors blues" id="DarkBlue"></div>
@@ -1030,7 +994,7 @@ permalink: /colorpicker/
     <div class="reference-colors oranges" id="Darkorange"></div>
     <div class="reference-colors purples" id="DarkOrchid"></div>
     <div class="reference-colors reds" id="DarkRed"></div>
-    <div class="reference-colors reds" id="DarkSalmon"></div>
+    <div class="reference-colors oranges" id="DarkSalmon"></div>
     <div class="reference-colors greens" id="DarkSeaGreen"></div>
     <div class="reference-colors blues" id="DarkSlateBlue"></div>
     <div class="reference-colors greys" id="DarkSlateGray"></div>
@@ -1043,7 +1007,7 @@ permalink: /colorpicker/
     <div class="reference-colors greys" id="DimGrey"></div>
     <div class="reference-colors blues" id="DodgerBlue"></div>
     <div class="reference-colors reds" id="FireBrick"></div>
-    <div class="reference-colors greys" id="FloralWhite"></div>
+    <div class="reference-colors yellows" id="FloralWhite"></div>
     <div class="reference-colors greens" id="ForestGreen"></div>
     <div class="reference-colors purples" id="Fuchsia"></div>
     <div class="reference-colors greys" id="Gainsboro"></div>
@@ -1058,14 +1022,14 @@ permalink: /colorpicker/
     <div class="reference-colors pinks" id="HotPink"></div>
     <div class="reference-colors reds" id="IndianRed"></div>
     <div class="reference-colors purples" id="Indigo"></div>
-    <div class="reference-colors greys" id="Ivory"></div>
+    <div class="reference-colors yellows" id="Ivory"></div>
     <div class="reference-colors yellows" id="Khaki"></div>
     <div class="reference-colors purples" id="Lavender"></div>
     <div class="reference-colors purples" id="LavenderBlush"></div>
     <div class="reference-colors greens" id="LawnGreen"></div>
     <div class="reference-colors yellows" id="LemonChiffon"></div>
     <div class="reference-colors blues" id="LightBlue"></div>
-    <div class="reference-colors pinks" id="LightCoral"></div>
+    <div class="reference-colors reds" id="LightCoral"></div>
     <div class="reference-colors blues" id="LightCyan"></div>
     <div class="reference-colors yellows" id="LightGoldenRodYellow"></div>
     <div class="reference-colors greys" id="LightGray"></div>
@@ -1073,7 +1037,7 @@ permalink: /colorpicker/
     <div class="reference-colors greens" id="LightGreen"></div>
     <div class="reference-colors pinks" id="LightPink"></div>
     <div class="reference-colors oranges" id="LightSalmon"></div>
-    <div class="reference-colors greens" id="LightSeaGreen"></div>
+    <div class="reference-colors blues" id="LightSeaGreen"></div>
     <div class="reference-colors blues" id="LightSkyBlue"></div>
     <div class="reference-colors greys" id="LightSlateGray"></div>
     <div class="reference-colors greys" id="LightSlateGrey"></div>
@@ -1084,7 +1048,7 @@ permalink: /colorpicker/
     <div class="reference-colors yellows" id="Linen"></div>
     <div class="reference-colors purples" id="Magenta"></div>
     <div class="reference-colors reds" id="Maroon"></div>
-    <div class="reference-colors blues" id="MediumAquaMarine"></div>
+    <div class="reference-colors greens" id="MediumAquaMarine"></div>
     <div class="reference-colors blues" id="MediumBlue"></div>
     <div class="reference-colors purples" id="MediumOrchid"></div>
     <div class="reference-colors purples" id="MediumPurple"></div>
@@ -1092,12 +1056,12 @@ permalink: /colorpicker/
     <div class="reference-colors blues" id="MediumSlateBlue"></div>
     <div class="reference-colors greens" id="MediumSpringGreen"></div>
     <div class="reference-colors blues" id="MediumTurquoise"></div>
-    <div class="reference-colors reds" id="MediumVioletRed"></div>
+    <div class="reference-colors purples" id="MediumVioletRed"></div>
     <div class="reference-colors blues" id="MidnightBlue"></div>
     <div class="reference-colors greens" id="MintCream"></div>
     <div class="reference-colors pinks" id="MistyRose"></div>
-    <div class="reference-colors greys" id="Moccasin"></div>
-    <div class="reference-colors greys" id="NavajoWhite"></div>
+    <div class="reference-colors yellows" id="Moccasin"></div>
+    <div class="reference-colors yellows" id="NavajoWhite"></div>
     <div class="reference-colors blues" id="Navy"></div>
     <div class="reference-colors yellows" id="OldLace"></div>
     <div class="reference-colors greens" id="Olive"></div>
@@ -1108,7 +1072,7 @@ permalink: /colorpicker/
     <div class="reference-colors yellows" id="PaleGoldenRod"></div>
     <div class="reference-colors greens" id="PaleGreen"></div>
     <div class="reference-colors blues" id="PaleTurquoise"></div>
-    <div class="reference-colors reds" id="PaleVioletRed"></div>
+    <div class="reference-colors pinks" id="PaleVioletRed"></div>
     <div class="reference-colors yellows" id="PapayaWhip"></div>
     <div class="reference-colors oranges" id="PeachPuff"></div>
     <div class="reference-colors oranges" id="Peru"></div>
@@ -1119,24 +1083,24 @@ permalink: /colorpicker/
     <div class="reference-colors reds" id="Red"></div>
     <div class="reference-colors reds" id="RosyBrown"></div>
     <div class="reference-colors blues" id="RoyalBlue"></div>
-    <div class="reference-colors greys" id="SaddleBrown"></div>
+    <div class="reference-colors oranges" id="SaddleBrown"></div>
     <div class="reference-colors reds" id="Salmon"></div>
-    <div class="reference-colors greys" id="SandyBrown"></div>
+    <div class="reference-colors oranges" id="SandyBrown"></div>
     <div class="reference-colors greens" id="SeaGreen"></div>
-    <div class="reference-colors greys" id="SeaShell"></div>
-    <div class="reference-colors reds" id="Sienna"></div>
+    <div class="reference-colors yellows" id="SeaShell"></div>
+    <div class="reference-colors oranges" id="Sienna"></div>
     <div class="reference-colors greys" id="Silver"></div>
     <div class="reference-colors blues" id="SkyBlue"></div>
     <div class="reference-colors blues" id="SlateBlue"></div>
     <div class="reference-colors greys" id="SlateGray"></div>
     <div class="reference-colors greys" id="SlateGrey"></div>
-    <div class="reference-colors yellows" id="Snow"></div>
+    <div class="reference-colors gresy" id="Snow"></div>
     <div class="reference-colors greens" id="SpringGreen"></div>
     <div class="reference-colors blues" id="SteelBlue"></div>
     <div class="reference-colors yellows" id="Tan"></div>
     <div class="reference-colors blues" id="Teal"></div>
     <div class="reference-colors purples" id="Thistle"></div>
-    <div class="reference-colors reds" id="Tomato"></div>
+    <div class="reference-colors ornages" id="Tomato"></div>
     <div class="reference-colors blues" id="Turquoise"></div>
     <div class="reference-colors purples" id="Violet"></div>
     <div class="reference-colors yellows" id="Wheat"></div>
