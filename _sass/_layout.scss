@@ -34,7 +34,10 @@ body {
   }
 }
 
-.textInput { h4,input { display: inline-block; } }
+.textInput { 
+  vertical-align: top;
+  h4,input { display: inline-block; } 
+}
 
 .squares {
   div {
