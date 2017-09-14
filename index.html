@@ -25,7 +25,7 @@ layout: default
                     $(this).fadeTo("slow", 1);
                 },
                 click: function () {
-                    if($(this).text() == inputString.toString()) {
+                    if($(this).text() == $("#yourText").text() ) {
                         $(this).fadeTo("slow", 0)
                         .text("")
                         .fadeTo("slow", 1);
