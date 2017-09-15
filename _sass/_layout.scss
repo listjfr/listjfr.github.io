@@ -341,7 +341,7 @@ body {
 
 }
 
-#information, .nav {
+#information, #navbar {
   display: inline-block;
 }
 
@@ -351,7 +351,7 @@ body {
   text-align: center;
 }
 
-.nav {
+#navbar {
   border: 1px solid black;
   position: fixed;
   width:30%;
