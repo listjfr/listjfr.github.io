@@ -12,7 +12,8 @@ permalink: /about/
       <script>
         $(document).ready(function() {
           $("#top").click(function() {
-            $(window).scrollTop(0);
+            $(html, body).animate({ scrollTop: 0 }, "slow");
+            return false;
           });
         });
       </script>
