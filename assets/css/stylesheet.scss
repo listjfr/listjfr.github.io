@@ -1,1 +1,39 @@
+/* CSS stylesheet for About site */
+* {
+ font-family: Roboto, Helvetica, sans-serif; 
+}
 
+#name {
+  font-size: 20px;
+  font-style: bold;
+}
+
+#information, #navbar {
+  display: inline-block;
+}
+
+#information {
+  border: 1px solid black;
+  width: 70%;
+  text-align: center;
+  float: left;
+}
+
+#navbar {
+  border: 1px solid black;
+  position: fixed;
+  width:30%;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: left;
+  
+  ul {
+    list-style: none;
+  }
+  
+  #top button {
+    border: 0px solid black;
+    background-color: white;
+    float: left;
+  }
+}
