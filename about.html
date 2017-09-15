@@ -12,7 +12,7 @@ permalink: /about/
       <script>
         $(document).ready(function() {
           function scrollToAnchor(anchor_id) {
-            var tag = $("#" + anchor_id + "");
+            var tag = $("a[id='" + anchor_id + "'");
             $("html, body").animate({scrollTop: tag.offset().top}, 600);
           }
           
