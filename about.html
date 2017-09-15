@@ -22,11 +22,13 @@ permalink: /about/
             });
             
             $("#SkillsLink").click(function() {
-              scrollToAnchor("Skills");
+              $("html, body").animate({scrollTop: $("#Skills").offset().top}, 600);
+              return false;
             });
             
             $("#ExperienceLink").click(function() {
               scrollToAnchor("Experience");
+              return false;
             });
             
             $("#ProjectsLink").click(function() {
