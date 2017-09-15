@@ -349,6 +349,7 @@ body {
   border: 1px solid black;
   width: 60%;
   text-align: center;
+  float: left;
 }
 
 #navbar {
@@ -357,6 +358,11 @@ body {
   width:30%;
   vertical-align: top;
   text-decoration: none;
+  float: right;
+  
+  ul {
+    list-style: none;
+  }
   
   #top button {
     border: 0px solid black;
