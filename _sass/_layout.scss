@@ -341,17 +341,17 @@ body {
 
 }
 
-#info, #navbar {
+#information, .nav {
   display: inline-block;
 }
 
-#info {
+#information {
   border: 1px solid black;
   width: 60%;
   text-align: center;
 }
 
-#navbar {
+.nav {
   border: 1px solid black;
   positon: fixed;
   width:30%;
