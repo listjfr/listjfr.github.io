@@ -329,3 +329,36 @@ body {
     #Yellow { background-color: Yellow; }
     #YellowGreen { background-color: YellowGreen; }
 }
+
+/* CSS stylesheet for About site */
+* {
+  font-family: helvetica;
+}
+
+#name {
+  font-size: 20px;
+  font-style: bold;
+
+}
+
+#info, #navbar {
+  display: inline-block;
+}
+
+#info {
+  border: 1px solid black;
+  width: 60%;
+  text-align: center;
+}
+
+#navbar {
+  border: 1px solid black;
+  positon: fixed;
+  width:30%;
+  vertical-align: top;
+  
+  #top button {
+    border: 0px solid black;
+    background-color: none;
+  }
+}
