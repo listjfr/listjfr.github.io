@@ -12,7 +12,7 @@ permalink: /about/
       <script>
         $(document).ready(function() {
           function scrollToAnchor(anchor_id) {
-            var tag = $("a[id='" + anchor_id + "'");
+            var tag = $("#" + anchor_id + "");
             $("html, body").animate({scrollTop: tag.offset().top}, 600);
           }
           
@@ -67,7 +67,7 @@ permalink: /about/
     
     <div id="navbar">
       <ul>
-        <li><a id="#SkillsLink">Skills</a></li>
+        <li><a id="#SkillsLink" href="">Skills</a></li>
         <li><a id="#ExperienceLink">Experience</a></li>
         <li><a id="#ProjectsLink">Projects</a></li>
         <li><a id="#AchievementsLink">Achievements</a></li>
