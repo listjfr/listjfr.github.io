@@ -7,6 +7,8 @@
 #name {
   font-size: 20px;
   font-style: bold;
+  margin-top: 300px;
+  margin-bottom: 300px
 }
 
 #information, #navbar {
@@ -18,9 +20,10 @@
   width: 70%;
   text-align: center;
   float: left;
+ 
  .info-block {
   border: 1px solid black;
-  margin-bottom: 250px;
+  margin-bottom: 300px;
  }
 }
 
@@ -36,7 +39,9 @@
     list-style: none;
     li {
      padding: 100px;
-     a { text-decoration: none; }
+     a { 
+      text-decoration: none; 
+     }
     }
   }
   
