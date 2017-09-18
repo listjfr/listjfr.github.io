@@ -19,9 +19,17 @@ permalink: /about/
           });
           
           $("#top").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, 600);
+            $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
             });
+          
+          $("a").hover(function() {
+            $(this).css("background-color", "black");
+            $(this).css("color", "white");
+          }, function() {
+            $(this).css("background-color", "none");
+            $(this).css("color", "black");
+          });
             
         });
       </script>
