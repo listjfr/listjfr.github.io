@@ -2,6 +2,9 @@
 ---
 * {
  font-family: Roboto, Helvetica, sans-serif; 
+}
+
+html {
  background-image: url("https://cdn.pixabay.com/photo/2013/11/12/19/57/toothed-belt-drive-209677_960_720.jpg");
  background-repeat: no-repeat;
  background-attachment: fixed;
@@ -30,6 +33,7 @@
   width: 70%;
   text-align: center;
   float: left;
+ opacity: 0.5;
  
  .info-block {
   border: 1px solid black;
