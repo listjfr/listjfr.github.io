@@ -24,10 +24,10 @@ permalink: /about/
             });
           
           $("a").hover(function() {
-            $("li").css("background-color", "black");
+            $("this").css("background-color", "black");
             $(this).css("color", "white");
           }, function() {
-            $("li").css("background-color", "white");
+            $("this").css("background-color", "white");
             $(this).css("color", "black");
           });
             
@@ -61,10 +61,10 @@ permalink: /about/
     
     <div id="navbar">
       <ul>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Achievements">Achievements</a></li>
+        <a href="#Skills"><li>Skills</li></a>
+        <a href="#Experience"><li>Experience</li></a>
+        <a href="#Projects"><li>Projects</li></a>
+        <a href="#Achievements"><li>Achievements</li></a>
       </ul>
       <div id="top">
         <button> &#8593; Top</button>
