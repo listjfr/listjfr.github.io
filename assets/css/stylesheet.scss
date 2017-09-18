@@ -41,16 +41,15 @@
   vertical-align: top;
   text-decoration: none;
   text-align: left;
-  
   ul {
     list-style: none;
-    li {
-     padding: 30px;
      a { 
       text-decoration: none; 
       color: black;
+      li {
+       padding: 30px;
+       }
      }
-    }
   }
   
   #top button {
