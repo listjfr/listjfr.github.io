@@ -14,7 +14,8 @@ permalink: /about/
           //function scrollToAnchor() {
             $("a").click(function() {
                 $("html, body").animate(
-                  {scrollTop: $( $(this).attr('href') ).offset().top }, 600, function() { window.location.hash = hash; } );
+                  {scrollTop: $( $(this).attr('href') ).offset().top }, 600);
+              window.location.hash = hash;
               return false;
             });
           //});
