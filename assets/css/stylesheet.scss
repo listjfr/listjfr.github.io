@@ -4,17 +4,18 @@
  font-family: Roboto, Helvetica, sans-serif; 
 }
 
-html {
- background-image: url("https://static.pexels.com/photos/1936/airplane-jet-aviation-aircraft.jpg");
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
+#intro {
+  background-image: url("https://static.pexels.com/photos/1936/airplane-jet-aviation-aircraft.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #name {
   margin-top: 150px;
   padding-bottom: 150px;
- color: white;
+  color: white;
+
 }
 
 #description {
