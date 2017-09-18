@@ -11,14 +11,12 @@ permalink: /about/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          //function scrollToAnchor() {
-            $("a").click(function() {
-                $("html, body").animate(
-                  {scrollTop: $( $(this).attr('href') ).offset().top }, 600);
-              //window.location.hash = hash;
-              return false;
-            });
-          //});
+          $("a").click(function() {
+            $("html, body").animate({
+              scrollTop: $( $(this).attr('href') ).offset().top }, 
+              600);
+            return false;
+          });
           
           $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 600);
