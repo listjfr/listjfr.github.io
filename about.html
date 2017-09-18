@@ -11,10 +11,15 @@ permalink: /about/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          function scrollToAnchor(anchor_id) {
-            var tag = $("#" + anchor_id + "");
-            $("html, body").animate({scrollTop: tag.offset().top}, 600);
-          }
+          //function scrollToAnchor() {
+            $("a").on('click', function(event) {
+              if(this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $("html, body").animate({scrollTop: $(hash).offset().top }, 600, function() { window.location.hash = hash; });
+              } //end if loop
+            });
+          //});
           
           $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 600);
@@ -22,21 +27,21 @@ permalink: /about/
             });
             
             $("#SkillsLink").click(function() {
-              $("html, body").animate({scrollTop: $("#Skills").offset().top}, 600);
+              //$("html, body").animate({scrollTop: $("#Skills").offset().top}, 600);
               return false;
             });
             
             $("#ExperienceLink").click(function() {
-              scrollToAnchor("Experience");
+              //scrollToAnchor("Experience");
               return false;
             });
             
             $("#ProjectsLink").click(function() {
-              scrollToAnchor("Projects");
+              //scrollToAnchor("Projects");
             });
             
             $("#AchievementsLink").click(function() {
-              scrollToAnchor("Achievements");
+              //scrollToAnchor("Achievements");
             });
             
         });
@@ -69,10 +74,10 @@ permalink: /about/
     
     <div id="navbar">
       <ul>
-        <li><a id="#SkillsLink">Skills</a></li>
-        <li><a id="#ExperienceLink">Experience</a></li>
-        <li><a id="#ProjectsLink">Projects</a></li>
-        <li><a id="#AchievementsLink">Achievements</a></li>
+        <li><a href="#SkillsLink">Skills</a></li>
+        <li><a href="#ExperienceLink">Experience</a></li>
+        <li><a href="#ProjectsLink">Projects</a></li>
+        <li><a href="#AchievementsLink">Achievements</a></li>
       </ul>
       <div id="top">
         <button> &#8593; Top</button>
