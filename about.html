@@ -27,11 +27,11 @@ permalink: /about/
           $("#top").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
-            $("#top a").css("color", "black");
+            $("#top-text").css("color", "black");
           }, function() {
             $(this).css("background-color", "transparent");
             $(this).css("opacity", "1");
-            $("#top a").css("color", "white");
+            $("#top-text").css("color", "white");
           });
           
           $("a li").hover(function() {
@@ -167,6 +167,6 @@ University (Fall 2016-Current)</h2>
     </div>
       
   <div id="top">
-    <a><h2>&#8593;</h2></a>
+    <a><h2 id="top-text">&#8593;</h2></a>
   </div>
 </html>
