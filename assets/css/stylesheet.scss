@@ -106,8 +106,12 @@ h1 {
  height: 200px;
  width: 170px;
  background-image: url("https://placekitten.com/170/200");
- position: absolute;
- left: 10px;
+ float: left;
+}
+
+#contact-information {
+ float: left;
+ margin-left: 50px;
 }
 
 #contact-pic, #contact-information {
@@ -130,5 +134,8 @@ h1 {
 
 footer {
  padding-top: 20px;
- float: right;
+ float: left;
+ position: absolute; 
+ bottom: 5px;
+ left: 10px;
 }
