@@ -102,10 +102,14 @@ h1 {
   }
   
   #top button {
-    border: 0px solid black;
+    border: 1px solid white;
+    border-radius: 100%;
     background-color: transparent;
     float: right;
     font-size: 20px;
+    positon: absolute;
+    bottom: 10px; 
+    right: 10px;
   }
 }
 
