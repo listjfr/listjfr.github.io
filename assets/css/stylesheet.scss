@@ -30,7 +30,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 125px;
-  background-image: url("http://placekitten.com/g/150/150");
+  background-image: url("https://placekitten.com/g/150/150");
   background-size: cover;
   border-radius: 100%;
   height: 150px;
@@ -100,6 +100,16 @@ h1 {
        }
      }
   }
+}
+
+#contact-pic {
+ height: 200px;
+ width: 170px;
+ background-image: url("https://placekitten.com/170/200");
+}
+
+#contact-pic, #contact-information {
+ display: inline-block;
 }
 
  #top {
