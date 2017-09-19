@@ -46,6 +46,7 @@ html {
 #title {
  margin-top: 25px;
  margin-bottom: 70px;
+ font-size: 20px;
 }
 
 #description {
@@ -136,7 +137,7 @@ h1 {
     z-index: 1;
   }
 
-footer {
+#footer {
  float: left;
  position: absolute; 
  bottom: 0px;
