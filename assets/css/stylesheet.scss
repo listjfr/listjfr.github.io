@@ -109,9 +109,11 @@ h1 {
     border: 1px solid white;
     border-radius: 100%;
     background-color: transparent;
+    color: white;
     position: absolute;
-    bottom: 0px; 
+    bottom: 50px; 
     right: 100px;
+    z-index: 1;
   }
 
 footer {
