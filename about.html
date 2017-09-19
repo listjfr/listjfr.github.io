@@ -11,7 +11,7 @@ permalink: /about/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          $("a").click(function() {
+          $("ul a").click(function() {
             $("html, body").animate({
               scrollTop: $( $(this).attr('href') ).offset().top }, 
               600);
@@ -24,7 +24,7 @@ permalink: /about/
             return false;
             });
           
-          $("#top button").hover(function() {
+          $("#top").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
             $(this).css("color", "black");
@@ -165,7 +165,7 @@ University (Fall 2016-Current)</h2>
         <a href="#Contact"><li>Contact</li></a>
       </ul>
       <div id="top">
-        <button><h1>&#8593;</h1></button>
+        <a><h1>&#8593;</h1></a>
       </div>
     </div>
     
