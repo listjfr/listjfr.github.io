@@ -82,7 +82,12 @@ h1 {
  }
 }
 
-#programming, #software, #lab, #other {
+#programming, #software,  {
+ display: inline-block;
+ vertical-align: top;
+}
+
+#lab, #other { 
  display: inline-block;
  vertical-align: top;
 }
