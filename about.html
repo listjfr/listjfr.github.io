@@ -24,6 +24,16 @@ permalink: /about/
             return false;
             });
           
+          $("#top").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+          }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+          
           $("a li").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
@@ -155,7 +165,7 @@ University (Fall 2016-Current)</h2>
         <a href="#Contact"><li>Contact</li></a>
       </ul>
       <div id="top">
-        <button> &#8593; Top</button>
+        <button><h2>&#8593; Top</h2></button>
       </div>
     </div>
     
