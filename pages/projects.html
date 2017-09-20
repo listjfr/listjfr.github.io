@@ -10,7 +10,21 @@ permalink: /projects/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
-          $(".projects").css("background-color", "white");
+          $(".home").css("border-bottom", "1px solid white");
+
+          $(".navbar ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+        });
+        
+        //opacity block navbar style
+        /*$(".projects").css("background-color", "white");
           $(".projects").css("opacity", "0.5");
           $(".projects").css("color", "black");
           
@@ -26,10 +40,8 @@ permalink: /projects/
             $(this).css("background-color", "transparent");
             $(this).css("opacity", "1");
             $(this).css("color", "white");
-            }
+            }*/
           });
-          
-        });
       </script>
     </head>
     <div class="overlay"></div>
