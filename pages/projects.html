@@ -8,7 +8,23 @@ permalink: /projects/
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="/assets/css/pages_stylesheet.css?v=2b8c3c9db4f4a1595e5cac2e161d3e63755cd065" rel="stylesheet" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script></script>
+      <script>
+        $(document).ready(function() {
+          $(".home li").css("background-color", "white");
+          $(".home li").css("opacity", "0.5");
+          $(".home li").css("color", "black");
+          
+          $(".navbar ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+        });
+      </script>
     </head>
     <div class="overlay"></div>
     <div class="navbar">
