@@ -69,6 +69,11 @@ html {
   position: fixed;
   border-right: 1px solid white;
   min-width: 200px;
+  
+  #side-navbar {
+    list-style: none;
+    font-size: 20px;
+  }
 }
 
 .subtitle, .body-text, .id-card {
@@ -96,6 +101,8 @@ html {
   top: 0;
   width: 18%;
 }
+
+
 
 .info-body {
  text-align: left;
