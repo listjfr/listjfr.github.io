@@ -1,0 +1,40 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-image: url("https://static.pexels.com/photos/1936/airplane-jet-aviation-aircraft.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.overlay {
+  opacity: 0.6;
+  z-index: -1;
+  background: #131313;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+}
+  
+#home-title {
+  font-size: 150px;
+}
+   
+#home-description {
+  font-size: 20px;
+}
+
+#navbar {
+  list-syle: none;
+  font-size: 20px;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  margin: 0 auto;
+}
