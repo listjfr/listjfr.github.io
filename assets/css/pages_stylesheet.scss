@@ -71,8 +71,18 @@ html {
   min-width: 200px;
   
   #side-navbar {
+    ul {
     list-style: none;
-    font-size: 20px;
+    text-align: left;
+     a { 
+      text-decoration: none; 
+      color: white;
+      li {
+       padding: 20px;
+       font-size: 20px;
+       }
+     }
+  }
   }
 }
 
@@ -101,8 +111,6 @@ html {
   top: 0;
   width: 18%;
 }
-
-
 
 .info-body {
  text-align: left;
