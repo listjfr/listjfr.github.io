@@ -46,6 +46,16 @@ permalink: /resume/
             $("#top-text").css("color", "white");
           });
           
+          $("#side-navbar ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+          
           $("#side-navbar ul a").click(function() {
             $("html, body").animate({
               scrollTop: $( $(this).attr('href') ).offset().top - 200}, 
@@ -71,13 +81,13 @@ permalink: /resume/
     <div class="subtitle">
       Resume
       <div id="side-navbar">
-      <ul>
-        <a href="#Education"><li>Education ></li></a>
-        <a href="#Skills"><li>Skills ></li></a>
-        <a href="#Experience"><li>Experience ></li></a>
-        <a href="#Achievements"><li>Achievements ></li></a>
-      </ul>
-    </div>
+        <ul>
+          <a href="#Education"><li>Education &#187;</li></a>
+          <a href="#Skills"><li>Skills &#187;</li></a>
+          <a href="#Experience"><li>Experience &#187;</li></a>
+          <a href="#Achievements"><li>Achievements &#187;</li></a>
+        </ul>
+      </div>
     </div>
     <div class="body-text">
       <div id="Education" class="info-block">
