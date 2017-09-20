@@ -63,6 +63,7 @@ html {
   height: 70%;
   position: fixed;
   border-right: 1px solid white;
+  min-width: 200px;
 }
 
 .subtitle, .body-text, .id-card {
@@ -71,8 +72,9 @@ html {
 }
 
 .body-text {
-  margin: 15% 20%;
+  margin-top: 15%;
   font-size: 20px;
+  margin-left: 250px;
 }
 
 #about-pic {
