@@ -11,6 +11,10 @@ permalink: /resume/
       <script>
         $(document).ready(function() {
           $(".resume").css("border-bottom", "1px solid white");
+          
+          $(window).scroll(function(){
+            $(".body-text").css("opacity", 1 - $(window).scrollTop() / 180);
+          });
 
           $(".navbar ul a li").hover(function() {
             $(this).css("background-color", "white");
