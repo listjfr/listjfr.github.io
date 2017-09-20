@@ -19,13 +19,16 @@ permalink: /projects/
             $(this).css("opacity", "0.5");
             $(this).css("color", "black");
             }, function() {
-            $(".projects").css("background-color", "white");
-            $(".projects").css("opacity", "0.5");
-            $(".projects").css("color", "black");
+            if( $(this).attr('class') == "projects") {
+              //do nothing
+            }
+            else {
             $(this).css("background-color", "transparent");
             $(this).css("opacity", "1");
             $(this).css("color", "white");
+            }
           });
+          
         });
       </script>
     </head>
