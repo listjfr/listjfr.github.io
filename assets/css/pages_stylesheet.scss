@@ -27,7 +27,7 @@ html {
   
 #home-title {
   font-size: 150px;
-  margin-top: 30%;
+  margin-top: 25%;
   margin-left: 10%
 }
    
@@ -50,4 +50,10 @@ html {
     font-size: 20px;
     display: inline-block;
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 25%
 }
