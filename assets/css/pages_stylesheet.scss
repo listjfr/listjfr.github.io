@@ -59,10 +59,15 @@ html {
   margin-top: 15%;
   font-size: 50px;
   padding-left: 10px;
+  padding-right: 20px;
+  height: 70%;
+  position: fixed;
+  border-right: 1px solid white;
 }
 
-.subtitle, .body-text {
+.subtitle, .body-text, .id-card {
   display: inline-block;
+  vertical-align:top;
 }
 
 .body-text {
