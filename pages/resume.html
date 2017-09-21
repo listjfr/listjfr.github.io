@@ -64,19 +64,18 @@ permalink: /resume/
             return false;
           });
           
-          $(".menu-button div").on({
+          $(".menu-button").on({
             mouseenter: function() {
-              $("navbar").css("display", "inline");
               $(".menu-button").css("opacity", "0.6");
             }, 
             click: function() {
-              $("navbar").css("display", "inline");
+              $(".navbar").css("display", "inline");
               $(".menu-button").css("opacity", "0.6");
             }
           });
           
-          $(".navbar, .menu-button div").mouseleave(function() {
-            $("navbar").css("display", "none");
+          $(".navbar, .menu-button").mouseleave(function() {
+            $(".navbar").css("display", "none");
             $(".menu-button").css("opacity", "1");
           });
           
