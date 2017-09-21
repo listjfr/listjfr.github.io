@@ -198,6 +198,7 @@ footer {
   .menu-button-container {
     height: 100%;
     .menu-button {
+      z-index: 2;
       margin: 4px 0;
       padding: 10px 10px;
       height: 35px;
