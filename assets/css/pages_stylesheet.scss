@@ -106,14 +106,16 @@ html {
   width: 150px;
   background-image: url("https://placekitten.com/g/150/150");
   border-radius: 100%;
+  margin: 0 auto;
 }
 
 .id-card {
   position: fixed;
   left: 10px;
-  top: 250px;
+  top: 300px;
   width: 18%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .info-body {
