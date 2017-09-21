@@ -64,8 +64,19 @@ permalink: /resume/
             return false;
           });
           
-        });
+          $("#menu-button").on({
+            mouseenter: function() {
+              $("mini-navbar").css("display", "inline");
+            },
+            mouseleave: function() {
+              $("mini-navbar").css("display", "none");
+            },
+            click: function() {
+              $("mini-navbar").css("display", "inline");
+            }
+          });
           
+        });    
       </script>
     </head>
     <div class="overlay"></div>
