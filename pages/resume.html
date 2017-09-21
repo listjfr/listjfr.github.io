@@ -10,6 +10,7 @@ permalink: /resume/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
+          //scroll to make navbar opaque
           $(window).scroll(function() {
             if( $(this).scrollTop() > 100 && $(window).width() > 1100) {
               $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
@@ -31,8 +32,10 @@ permalink: /resume/
             } 
           });
           
+          //show current page on navbar w/ underline
           $(".resume").css("border-bottom", "1px solid white");
-
+          
+          //navbar hover action
           $(".navbar ul a li").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
@@ -43,6 +46,7 @@ permalink: /resume/
             $(this).css("color", "white");
           });
           
+          //top button functions
            $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
@@ -58,6 +62,7 @@ permalink: /resume/
             $("#top-text").css("color", "white");
           });
           
+          //side navbar functions
           $("#side-navbar ul a li").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
@@ -76,6 +81,7 @@ permalink: /resume/
             return false;
           });
           
+          //menu button when window < 665px
           $(".menu-button").mouseenter(function() {
             $(".menu-button").css("background-color", "white");
             $(".menu-button").css("opacity", "0.5");
@@ -92,6 +98,11 @@ permalink: /resume/
                 $(".navbar").toggle();
                 $(".menu-button").css("opacity", "0.6");
             });
+          
+          //show regular navbar when window > 665px
+          if( $(window).width() > 665 ) {
+            $(".navbar").css("display", "inline");
+          }
           
         });    
       </script>
