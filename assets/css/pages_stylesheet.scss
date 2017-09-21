@@ -219,6 +219,30 @@ footer {
   }
 }
 
+.navbar2 {
+    position: fixed;
+    left: 0px;
+    display: none;
+    width: 25%;
+    margin: 0;
+    top: 55px;
+    ul {
+      float: left;
+      background-color: black;
+      padding-left: 10px;
+      a {
+         text-decoration: none;
+         margin: 0 10px;
+         li {
+          display: block; 
+          list-style: none;
+          font-size: 12px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
 //for screens less than 665px width
 @media only screen and (max-width: 665px) {
   .body-text {
@@ -235,18 +259,5 @@ footer {
   .mini-navbar {
     visibility: visible;
   }
-  .navbar {
-    display: none;
-    width: 25%;
-    margin: 0;
-    top: 55px;
-    ul {
-      float: left;
-      background-color: black;
-      padding-left: 10px;
-      a li {
-        display: block; 
-      }
-    }
-  }
+  
 }
