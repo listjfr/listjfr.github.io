@@ -64,17 +64,20 @@ permalink: /resume/
             return false;
           });
           
-          $(".menubutton div").on({
-            /*mouseenter: function() {
+          $(".menu-button div").on({
+            mouseenter: function() {
               $("navbar").css("display", "inline");
-            }, */
+              $(".menu-button").css("opacity", "0.6");
+            }, 
             click: function() {
               $("navbar").css("display", "inline");
+              $(".menu-button").css("opacity", "0.6");
             }
           });
           
           $(".navbar, .menu-button div").mouseleave(function() {
             $("navbar").css("display", "none");
+            $(".menu-button").css("opacity", "1");
           });
           
         });    
