@@ -120,18 +120,14 @@ html {
   position: fixed;
   top: 0px;
   left: 0px;
-  #menu-button {
-    height: 35px;
-    width: 35px;
-    float: left;
     div {
+    float: left;
     width: 35px;
     height: 5px;
     background-color: white;
     margin: 6px 0;
     display: block;
     }
-  }
 }
 
 //for screens less than 665px width
