@@ -98,11 +98,17 @@ html {
     position: static;
     height: auto;
     border-right: none;
-    margin-top: 250px;
-    margin-left: 20%;
+    margin-top: 150px;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
   }
   .info-block {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
+  }
+  .body-text {
+    margin-top: 50px;
+    margin-left: 0;
   }
 }
 
