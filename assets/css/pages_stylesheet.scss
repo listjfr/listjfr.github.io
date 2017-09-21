@@ -203,21 +203,21 @@ footer {
     height: 100%;
     .menu-button {
       z-index: 2;
-      margin: 4px 0;
-      padding: 10px 10px;
+      padding: 10px;
       height: 35px;
       width: 35px;
       div {
         float: left;
         width: 35px;
         height: 1px;
-        background-color: white;
+        border-bottom: 1px solid white;
         margin: 5px 0;
         display: block;
       }
     }
   }
 }
+
 .menu-button-container {
   height: 425px;
   width: 220px;
