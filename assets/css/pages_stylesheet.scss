@@ -55,7 +55,7 @@ html {
   }
   
   li {
-    list-syle: none;
+    list-style: none;
     font-size: 15px;
     display: inline-block;
     padding: 10px 20px;
@@ -83,7 +83,7 @@ html {
       li {
        padding: 10px 5px;
        font-size: 20px;
-        min-width: 170px;
+       min-width: 170px;
        }
       }
     }
@@ -109,6 +109,23 @@ html {
   .body-text {
     margin-top: 50px;
     margin-left: 0;
+  }
+}
+
+//for screens less than 665px width
+@media only screen and (max-width: 665px) {
+  .navbar {
+    display: none;
+    width: 25%;
+    margin: 0;
+    ul {
+      float: left;
+      background-color: black;
+      padding-left: 10px;
+      a li {
+        display: block; 
+      }
+    }
   }
 }
 
