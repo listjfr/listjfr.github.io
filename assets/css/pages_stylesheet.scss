@@ -119,17 +119,20 @@ html {
   position: fixed;
   top: 0px;
   left: 0px;
-  .menu-button {
-    padding: 18px 10px;
-    height: 35px;
-    width: 35px;
-    div {
-      float: left;
+  .menu-button-container {
+    height: 100%
+    .menu-button {
+      padding: 18px 10px;
+      height: 35px;
       width: 35px;
-      height: 1px;
-      background-color: white;
-      margin: 5px 0;
-      display: block;
+      div {
+        float: left;
+        width: 35px;
+        height: 1px;
+        background-color: white;
+        margin: 5px 0;
+        display: block;
+      }
     }
   }
 }
