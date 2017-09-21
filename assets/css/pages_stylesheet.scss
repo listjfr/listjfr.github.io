@@ -255,7 +255,9 @@ footer {
     z-index: 2;
     font-size: 40px;
   }
-  
+  .navbar {
+   display: none; 
+  }
   .mini-navbar {
     visibility: visible;
   }
