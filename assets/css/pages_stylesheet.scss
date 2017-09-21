@@ -116,7 +116,7 @@ html {
   visibility: hidden;
   width: 100%;
   background-color: #131313;
-  height: 35px;
+  height: 40px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -137,7 +137,7 @@ html {
 //for screens less than 665px width
 @media only screen and (max-width: 665px) {
   .mini-navbar {
-    display: inline;
+    visibility: visible;
   }
   .navbar {
     display: none;
