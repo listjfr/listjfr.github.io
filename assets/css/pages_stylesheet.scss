@@ -120,6 +120,7 @@ html {
   position: fixed;
   top: 0px;
   left: 0px;
+  .menu-button {
     div {
     float: left;
     width: 35px;
@@ -128,6 +129,7 @@ html {
     margin: 6px 0;
     display: block;
     }
+  }
 }
 
 //for screens less than 665px width
