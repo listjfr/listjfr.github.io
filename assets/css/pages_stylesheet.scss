@@ -54,23 +54,23 @@ html {
   
   li {
     list-syle: none;
-    font-size: 23px;
+    font-size: 15px;
     display: inline-block;
     padding: 10px 20px;
   }
 }
 
 .subtitle {
-  margin-top: 200px;
   font-size: 50px;
   padding-left: 10px;
-  padding-right: 20px;
   height: 70%;
   position: fixed;
-  border-right: 1px solid white;
-  min-width: 200px;
-  
-  #side-navbar {
+  top: 170px;
+  left: 20%;
+  border-left: 1px white solid;
+}
+
+#side-navbar {
     ul {
     list-style: none;
     text-align: left;
@@ -84,7 +84,6 @@ html {
       }
     }
   }
-}
 
 .subtitle, .body-text, .id-card {
   display: inline-block;
@@ -92,10 +91,12 @@ html {
 }
 
 .body-text {
-  margin-top: 200px;
+  margin-top: 250px;
   font-size: 20px;
-  margin-left: 250px;
+  margin-left: 20%;
+  margin-right: 20%;
   overflow: auto;
+  padding-left: 10px;
 }
 
 #about-pic {
