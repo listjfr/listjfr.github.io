@@ -115,20 +115,20 @@ html {
 .mini-navbar {
   visibility: hidden;
   width: 100%;
-  background-color: #131313;
-  height: 40px;
+  height: 71px;
   position: fixed;
   top: 0px;
   left: 0px;
   .menu-button {
+    padding: 9px 10px;
     height: 36px;
     width: 35px;
     div {
       float: left;
       width: 35px;
-      height: 5px;
+      height: 1px;
       background-color: white;
-      margin: 4px 0;
+      margin: 5px 0;
       display: block;
     }
   }
