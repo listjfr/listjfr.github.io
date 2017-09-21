@@ -45,6 +45,7 @@ html {
   margin: 0 auto;
   right: 30px;
   width: 100%;
+  display: inline;
   
   ul {
     float: right;
@@ -168,6 +169,9 @@ footer {
 
 //for screens less than 1100px width
 @media only screen and (max-width: 1100px) {
+  .navbar {
+    display: inline;
+  }
   #side-navbar { 
     display: none;
   }
