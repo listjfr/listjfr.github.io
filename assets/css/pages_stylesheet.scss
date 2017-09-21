@@ -89,6 +89,23 @@ html {
     }
   }
 
+//for screens less than 1100px width
+@media only screen and (max-width: 1100px) {
+  #side-navbar { 
+    display: none;
+  }
+  .subtitle {
+    position: static;
+    height: auto;
+    border-right: none;
+    margin-top: 250px;
+    margin-left: 20%;
+  }
+  .info-block {
+    margin-bottom: 100px;
+  }
+}
+
 .subtitle, .body-text, .id-card {
   display: inline-block;
   vertical-align:top;
