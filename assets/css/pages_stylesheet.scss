@@ -89,83 +89,6 @@ html {
     }
   }
 
-//for screens less than 1100px width
-@media only screen and (max-width: 1100px) {
-  #side-navbar { 
-    display: none;
-  }
-  .subtitle {
-    position: static;
-    height: auto;
-    border-right: none;
-    margin-top: 150px;
-    margin-left: 0%;
-    width: 100%;
-    text-align: center;
-  }
-  .info-block {
-    margin-bottom: 150px;
-  }
-  .body-text {
-    margin-top: 50px 0;
-  }
-}
-
-.mini-navbar {
-  visibility: hidden;
-  width: 100%;
-  height: 71px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  .menu-button-container {
-    height: 100%;
-    .menu-button {
-      margin: 4px 0;
-      padding: 10px 10px;
-      height: 35px;
-      width: 35px;
-      div {
-        float: left;
-        width: 35px;
-        height: 1px;
-        background-color: white;
-        margin: 5px 0;
-        display: block;
-      }
-    }
-  }
-}
-
-//for screens less than 665px width
-@media only screen and (max-width: 665px) {
-  .subtitle {
-    position: fixed;
-    top: 10px;
-    margin: 0;
-    z-index: 2;
-    font-size: 40px;
-  }
-  
-  .mini-navbar {
-    visibility: visible;
-  }
-  .navbar {
-    display: none;
-    width: 25%;
-    margin: 0;
-    top: 30px;
-    ul {
-      float: left;
-      background-color: black;
-      padding-left: 10px;
-      a li {
-        display: block; 
-      }
-    }
-  }
-}
-
 .subtitle, .body-text, .id-card {
   display: inline-block;
   vertical-align:top;
@@ -241,4 +164,81 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 10px;
+}
+
+//for screens less than 1100px width
+@media only screen and (max-width: 1100px) {
+  #side-navbar { 
+    display: none;
+  }
+  .subtitle {
+    position: static;
+    height: auto;
+    border-right: none;
+    margin-top: 150px;
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .info-block {
+    margin-bottom: 150px;
+  }
+  .body-text {
+    margin-top: 50px 0;
+  }
+}
+
+.mini-navbar {
+  visibility: hidden;
+  width: 100%;
+  height: 71px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  .menu-button-container {
+    height: 100%;
+    .menu-button {
+      margin: 4px 0;
+      padding: 10px 10px;
+      height: 35px;
+      width: 35px;
+      div {
+        float: left;
+        width: 35px;
+        height: 1px;
+        background-color: white;
+        margin: 5px 0;
+        display: block;
+      }
+    }
+  }
+}
+
+//for screens less than 665px width
+@media only screen and (max-width: 665px) {
+  .subtitle {
+    position: fixed;
+    top: 10px;
+    margin: 0;
+    z-index: 2;
+    font-size: 40px;
+  }
+  
+  .mini-navbar {
+    visibility: visible;
+  }
+  .navbar {
+    display: none;
+    width: 25%;
+    margin: 0;
+    top: 30px;
+    ul {
+      float: left;
+      background-color: black;
+      padding-left: 10px;
+      a li {
+        display: block; 
+      }
+    }
+  }
 }
