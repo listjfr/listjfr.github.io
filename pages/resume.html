@@ -64,16 +64,16 @@ permalink: /resume/
             return false;
           });
           
-          $(".mini-navbar div").on({
-            mouseenter: function() {
+          $(".menubutton div").on({
+            /*mouseenter: function() {
               $("navbar").css("display", "inline");
-            },
+            }, */
             click: function() {
               $("navbar").css("display", "inline");
             }
           });
           
-          $(".mini-navbar, div").mouseleave(function() {
+          $(".navbar, .menu-button div").mouseleave(function() {
             $("navbar").css("display", "none");
           });
           
