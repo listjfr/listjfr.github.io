@@ -81,6 +81,17 @@ permalink: /resume/
             return false;
           });
           
+          //navbar 2 hover actions
+          $(".navbar2 ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+          
           //menu button when window < 665px
           $(".menu-button").mouseenter(function() {
             $(".menu-button").css("background-color", "white");
