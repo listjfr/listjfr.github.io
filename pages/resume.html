@@ -66,14 +66,15 @@ permalink: /resume/
           
           $("#menu-button").on({
             mouseenter: function() {
-              $("mini-navbar").css("display", "inline");
-            },
-            mouseleave: function() {
-              $("mini-navbar").css("display", "none");
+              $("navbar").css("display", "inline");
             },
             click: function() {
-              $("mini-navbar").css("display", "inline");
+              $("navbar").css("display", "inline");
             }
+          });
+          
+          $("#menu-button, navbar").mouseleave(function() {
+            $("navbar").css("display", "none");
           });
           
         });    
