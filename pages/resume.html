@@ -73,19 +73,19 @@ permalink: /resume/
             return false;
           });
           
-          $(".menu-button div").mouseenter(function() {
+          $(".menu-button").mouseenter(function() {
             $(".menu-button").css("background-color", "white");
             $(".menu-button").css("opacity", "0.5");
             $(".menu-button div").css("background-color", "black");
             });
           
-          $(".menu-button div").mouseleave(function() {
+          $(".menu-button").mouseleave(function() {
             $(".menu-button").css("background-color", "transparent");
             $(".menu-button").css("opacity", "1");
             $(".menu-button div").css("background-color", "white");
           });
     
-            $(".menu-button div").click(function() {
+            $(".menu-button").click(function() {
                 $(".navbar").toggle();
                 $(".menu-button").css("opacity", "0.6");
             });
