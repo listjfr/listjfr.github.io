@@ -121,6 +121,10 @@ html {
   margin: 0 auto;
   text-align: center;
   z-index: -1;
+  display: inline;
+  #quick-facts {
+    margin: 0;
+  }
 }
 
 .info-body {
@@ -196,9 +200,25 @@ footer {
   }
   .info-block {
     margin-bottom: 150px;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 20px
   }
   .body-text {
     margin: 50px 0;
+  }
+  #id-card {
+    width: 100%;
+    position: static;
+    #about-pic {
+     display: inline-block; 
+    }
+     #quick-facts {
+       display: inline-block;
+       text-align: left;
+       vertical-align: top;
+       margin-left: 20px;
+     }
   }
 }
 
