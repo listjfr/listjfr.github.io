@@ -299,7 +299,7 @@ footer {
 }
 
 //for mobile devices smaller than 768px width
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .mini-navbar {
     height: 140px;
   }
@@ -330,5 +330,11 @@ footer {
   }
   h3 {
     font-size: 2.34em;
+  }
+  .navbar {
+   display: none; 
+  }
+  .mini-navbar {
+    visibility: visible;
   }
 }
