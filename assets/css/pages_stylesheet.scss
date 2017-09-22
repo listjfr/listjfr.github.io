@@ -278,8 +278,8 @@ footer {
     }
   }
 
-//for screens less than 665px width (mobile devices)
-@media only screen and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) {
+//for screens less than 665px width
+@media only screen and (max-width: 768px) {
   .body-text {
     margin: 50px 0;
   }
@@ -295,5 +295,40 @@ footer {
   }
   #home-title {
     font-size: 800%;
+  }
+}
+
+//for mobile devices smaller than 768px width
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .mini-navbar {
+    height: 140px;
+  }
+  .menu-button {
+    padding: 24px 36px 48px 36px;
+    height: 70px;
+    width: 70px;
+    div {
+      width: 70px;
+      padding: 10px 0;
+    }
+  }
+  .subtitle {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  #top {
+    display: none;
+  }
+  h1 {
+    font-size: 100px;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  p, li {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 2.34em;
   }
 }
