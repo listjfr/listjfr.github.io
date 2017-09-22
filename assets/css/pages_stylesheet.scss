@@ -304,7 +304,10 @@ footer {
     height: 140px;
     .menu-button-container {
       .navbar2 {
-         top: 125px;
+        top: 125px;
+        ul a li {
+         font-size: 60px; 
+        }
       }
       .menu-button {
         padding: 24px 36px 48px 36px;
@@ -317,7 +320,6 @@ footer {
       }
     }
   }
- 
   .subtitle {
     font-size: 60px;
     margin-top: 20px;
@@ -335,7 +337,7 @@ footer {
     font-size: 40px;
   }
   h3 {
-    font-size: 2.34em;
+    font-size: 50px;
   }
   .navbar {
    display: none; 
