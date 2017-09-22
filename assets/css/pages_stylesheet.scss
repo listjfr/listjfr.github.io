@@ -170,8 +170,8 @@ footer {
   font-size: 10px;
 }
 
-//for screens less than 1580px width
-@media only screen and (max-width: 1580px) {
+//for screens greater than 1580px width
+@media only screen and (mix-width: 1580px) {
   #side-navbar ul{
     padding-left: 80px;
   }
