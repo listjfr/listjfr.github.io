@@ -20,6 +20,15 @@ permalink: /home/
             } 
           });
           
+          $(window).scroll(function() {
+            if( $(this).scrollTop() > 25) {
+              $(".mini-navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
+            }
+            else {
+              $(".mini-navbar").css("background-color", "transparent").css("transition", "0.3s ease-in-out");
+            } 
+          });
+          
           //show current page on navbar w/ underline
           $(".home").css("border-bottom", "1px solid white");
           
