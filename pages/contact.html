@@ -10,8 +10,12 @@ permalink: /contact/
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
         $(document).ready(function() {
+          //scroll to make navbar opaque
           $(window).scroll(function() {
-            if( $(this).scrollTop() > 100) {
+            if( $(this).scrollTop() > 100 && $(window).width() > 1100) {
+              $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
+            }
+            else if( $(this).scrollTop() > 25 && $(window).width() > 665) {
               $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
             }
             else {
@@ -19,8 +23,19 @@ permalink: /contact/
             } 
           });
           
-          $(".contact").css("border-bottom", "1px solid white");
-
+          $(window).scroll(function() {
+            if( $(this).scrollTop() > 50) {
+              $(".mini-navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
+            }
+            else {
+              $(".mini-navbar").css("background-color", "transparent").css("transition", "0.3s ease-in-out");
+            } 
+          });
+          
+          //show current page on navbar w/ underline
+          $(".resume").css("border-bottom", "1px solid white");
+          
+          //navbar hover action
           $(".navbar ul a li").hover(function() {
             $(this).css("background-color", "white");
             $(this).css("opacity", "0.5");
@@ -30,10 +45,94 @@ permalink: /contact/
             $(this).css("opacity", "1");
             $(this).css("color", "white");
           });
-        });
+          
+          //top button functions
+           $("#top").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 800);
+            return false;
+            });
+          
+          $("#top").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $("#top-text").css("color", "black");
+          }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $("#top-text").css("color", "white");
+          });
+          
+          //side navbar functions
+          $("#side-navbar ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+          
+          $("#side-navbar ul a").click(function() {
+            $("html, body").animate({
+              scrollTop: $( $(this).attr('href') ).offset().top - 200}, 
+              600);
+            window.location.hash = $(this).attr('href');
+            return false;
+          });
+          
+          //navbar 2 hover actions
+          $(".navbar2 ul a li").hover(function() {
+            $(this).css("background-color", "white");
+            $(this).css("opacity", "0.5");
+            $(this).css("color", "black");
+            }, function() {
+            $(this).css("background-color", "transparent");
+            $(this).css("opacity", "1");
+            $(this).css("color", "white");
+          });
+          
+          //menu button when window < 665px
+          $(".menu-button").mouseenter(function() {
+            $(".menu-button").css("background-color", "white");
+            $(".menu-button").css("opacity", "0.5");
+            $(".menu-button div").css("border-bottom-color", "black");
+            });
+          
+          $(".menu-button-container").mouseleave(function() {
+            $(".menu-button").css("background-color", "transparent");
+            $(".menu-button").css("opacity", "1");
+            $(".menu-button div").css("border-bottom-color", "white");
+            $(".navbar2").css("display", "none");
+          });
+    
+            $(".menu-button").click(function() {
+                $(".navbar2").toggle();
+                $(".menu-button").css("opacity", "0.6");
+            });
+          
+        });    
       </script>
     </head>
     <div class="overlay"></div>
+    <div class="mini-navbar">
+      <div class="menu-button-container">
+        <div class="menu-button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="navbar2">
+          <ul>
+              <a href="/home"><li class="home">HOME</li></a>
+              <a href="/about"><li class="about">ABOUT</li></a>
+              <a href="/projects"><li class="projects">PROJECTS</li></a>
+              <a href="/resume"><li class="resume">RESUME</li></a>
+              <a href="/contact"><li class="contact">CONTACT</li></a>
+            </ul>
+        </div>
+      </div>
+    </div>
     <div class="navbar">
       <ul>
           <a href="/home"><li class="home">HOME</li></a>
