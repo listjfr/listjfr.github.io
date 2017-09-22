@@ -276,8 +276,8 @@ footer {
     }
   }
 
-//for screens less than 665px width
-@media only screen and (max-width: 665px) {
+//for screens less than 665px width (mobile devices)
+@media only screen and (max-width: 768px) {
   .body-text {
     margin: 50px 0;
   }
