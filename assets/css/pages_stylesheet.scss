@@ -302,14 +302,14 @@ footer {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .mini-navbar {
     height: 140px;
-  }
-  .menu-button-container .menu-button {
-    padding: 24px 36px 48px 36px;
-    height: 70px;
-    width: 70px;
-    div {
+    .menu-button-container .menu-button {
+      padding: 24px 36px 48px 36px;
+      height: 70px;
       width: 70px;
-      padding: 10px 0;
+      div {
+        width: 70px;
+        padding: 10px 0;
+      }
     }
   }
   .navbar2 {
