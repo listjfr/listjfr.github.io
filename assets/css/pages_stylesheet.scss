@@ -249,14 +249,11 @@ footer {
 //for screens less than 665px width
 @media only screen and (max-width: 665px) {
   .body-text {
-    margin: 110px 0;
+    margin: 50px 0;
   }
   .subtitle {
-    position: fixed;
-    top: 10px;
-    margin: 0;
-    z-index: 2;
-    font-size: 40px;
+    margin-top: 10px;
+    font-size: 30px;
   }
   .navbar {
    display: none; 
