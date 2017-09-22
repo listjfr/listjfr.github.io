@@ -12,7 +12,7 @@ permalink: /resume/
         $(document).ready(function() {
           //scroll to make navbar opaque
           $(window).scroll(function() {
-            if( $(this).scrollTop() > 100 && $(window).width() > 1100) {
+            if( $(this).scrollTop() > 100 && $(window).width() > 1380) {
               $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
             }
             else if( $(this).scrollTop() > 25 && $(window).width() > 665) {
@@ -22,16 +22,7 @@ permalink: /resume/
               $(".navbar").css("background-color", "transparent").css("transition", "0.3s ease-in-out");
             } 
           });
-          
-          $(window).scroll(function() {
-            if( $(this).scrollTop() > 50) {
-              $(".mini-navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
-            }
-            else {
-              $(".mini-navbar").css("background-color", "transparent").css("transition", "0.3s ease-in-out");
-            } 
-          });
-          
+    
           //show current page on navbar w/ underline
           $(".resume").css("border-bottom", "1px solid white");
           
