@@ -303,7 +303,7 @@ footer {
   .mini-navbar {
     height: 140px;
   }
-  .menu-button {
+  .menu-button-container .menu-button {
     padding: 24px 36px 48px 36px;
     height: 70px;
     width: 70px;
@@ -311,6 +311,9 @@ footer {
       width: 70px;
       padding: 10px 0;
     }
+  }
+  .navbar2 {
+    top: 125px;
   }
   .subtitle {
     font-size: 60px;
@@ -326,7 +329,7 @@ footer {
     font-size: 3em;
   }
   p, li {
-    font-size: 2em;
+    font-size: 40px;
   }
   h3 {
     font-size: 2.34em;
@@ -336,5 +339,8 @@ footer {
   }
   .mini-navbar {
     visibility: visible;
+  }
+  #home-title {
+    padding-top: 600px;
   }
 }
