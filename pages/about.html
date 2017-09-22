@@ -12,10 +12,7 @@ permalink: /about/
         $(document).ready(function() {
           //scroll to make navbar opaque
           $(window).scroll(function() {
-            if( $(this).scrollTop() > 100 && $(window).width() > 1380) {
-              $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
-            }
-            else if( $(this).scrollTop() > 25 && $(window).width() > 1) {
+            if( $(this).scrollTop() > 25) {
               $(".navbar").css("background-color", "#131313").css("transition", "0.3s ease-in-out");
             }
             else {
