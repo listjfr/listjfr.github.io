@@ -76,18 +76,18 @@ html {
 
 #side-navbar {
     ul {
-    list-style: none;
-    text-align: left;
+      list-style: none;
+      text-align: left;
       padding-left: 20px;
-    a { 
-      text-decoration: none; 
-      color: white;
-      li {
-       padding: 10px 5px;
-       font-size: 20px;
-       max-width: 200px;
-        min-width: 170px;
-       }
+      a { 
+        text-decoration: none; 
+        color: white;
+        li {
+         padding: 10px 5px;
+         font-size: 20px;
+         max-width: 200px;
+          min-width: 170px;
+         }
       }
     }
   }
@@ -167,6 +167,13 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 10px;
+}
+
+//for screens less than 1580px width
+@media only screen and (max-width: 1580px) {
+  #side-navbar ul{
+    padding-left: 80px;
+  }
 }
 
 //for screens less than 1100px width
