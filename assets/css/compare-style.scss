@@ -5,6 +5,7 @@ body {
   background-color: black;
   color: white;
   font-family: consolas;
+  text-decoration: none;
 }
 
 .highlight {
@@ -17,15 +18,15 @@ body {
   height: 420px;
   width: 100%;
   padding: 10px;
-  background-color: slategrey;
+  background-color: dimgrey;
 }
 
 #search {
   padding: 10px 0px 415px 10px;
-  background-color: slategrey;
+  background-color: dimgrey;
   border: 1px solid black;
   width: 100%;
-  color: rgb(110, 255, 243);
+  color: greenyellow;
   font-family: consolas;
 }
 
@@ -33,6 +34,7 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 45%;
+  margin: 0 10px;
 }
 
 p {
