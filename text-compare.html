@@ -40,6 +40,14 @@ permalink: text-compare
         $("#search").val(sourceText);
       });
       
+      $("#swap").hover(function() {
+        $(this).css("background-color", "white");
+        $(this).css("opacity", "0.6");
+      }, function() {
+        $(this).css("background-color", "transparent");
+        $(this).css("opacity", "1");
+      });
+      
     });
   </script>
 </head>
@@ -48,12 +56,12 @@ permalink: text-compare
     <p>Source</p>
     <div contenteditable="true" id="source"></div>
   </div>
+  
+  <button id="swap">&#8646;</button>
 
   <div class="container">
     <p>Search</p>
     <textarea id="search"></textarea>
   </div>
-  
-  <button id="swap">&#8646;</button>
 </body>
 </html>
