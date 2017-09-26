@@ -1,8 +1,15 @@
 ---
 ---
+body {
+  margin: 0 50px;
+  background-color: black;
+  color: white;
+  font-family: consolas;
+}
 
 .highlight {
-  background: yellow;
+  background: cyan;
+  color: black;
 }
 
 #source {
@@ -10,17 +17,22 @@
   height: 420px;
   width: 300px;
   padding: 10px;
+  background-color: slategrey;
 }
 
 #search {
-  padding: 10px 160px 415px 10px;
-  background-color: transparent;
+  padding: 10px 0px 415px 10px;
+  background-color: slategrey;
   border: 1px solid black;
+  wdith: 100%;
+  color: rgb(110, 255, 243);
+  font-family: consolas;
 }
 
 .container {
   display: inline-block;
   vertical-align: top;
+  width: 45%;
 }
 
 p {
