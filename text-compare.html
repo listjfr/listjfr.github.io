@@ -35,6 +35,9 @@ permalink: text-compare
         if (searchText == "") {
           count = 0;
         }
+        else if (sourceText.match(reg) == null) {
+        	count = 0;
+        }
         else {
           count = sourceText.match(reg).length;
         }
