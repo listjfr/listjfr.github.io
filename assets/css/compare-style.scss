@@ -26,7 +26,7 @@ body {
   background-color: dimgrey;
   border: 1px solid black;
   width: 100%;
-  height: 100%;
+  min-height: 500px;
   color: greenyellow;
   font-family: consolas;
 }
@@ -35,7 +35,7 @@ body {
   display: inline-block;
   vertical-align: top;
   width: 45%;
-  height: 100%;
+  min-height: 500px;
   margin: 0 10px;
 }
 
