@@ -1,0 +1,48 @@
+---
+permalink: text-compare
+---
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link href="/assets/css/pages_stylesheet.css?v=2b8c3c9db4f4a1595e5cac2e161d3e63755cd065" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#search").change(function() {
+        var sourceText = $("#source").text();
+        var searchText = $("#search").val();
+        var sourceArray = sourceText.trim().split(" ");
+        var searchArray = searchText.trim().split(" ");
+        var searchArrayLen = searchArray.length;
+
+        var query = "";
+
+        for (var i = 0; i < (searchArrayLen); i++) {
+          var replace_html = $("#source").text();
+          query += searchArray[i] + "|";
+        }
+        query = query.substr(0, query.length - 1);
+        var reg = new RegExp(query, 'ig');
+        var regExp = reg.exec(sourceText);
+        replace_html = replace_html.replace(reg, function(match) {
+          return "<span class='highlight'>" + match + "</span>";
+        });
+        $("#source").html(replace_html);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <p>Source</p>
+    <div contenteditable="true" id="source"></div>
+  </div>
+
+  <div class="container">
+    <p>Search</p>
+    <input id="search" />
+  </div>
+</body>
+</html>
