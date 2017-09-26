@@ -41,8 +41,12 @@ body {
 
 #swap {
   display: inline-block;
-  background-color: "transparent";
+  background-color: transparent;
   color: white;
+  border: none;
+  font-size: 25px;
+  border-radius: 100%;
+  margin-top: 10px;
 }
 
 p {
