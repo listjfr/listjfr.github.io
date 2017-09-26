@@ -1,0 +1,25 @@
+.highlight {
+  background: yellow;
+}
+
+#source {
+  border: 1px solid black;
+  height: 420px;
+  width: 300px;
+  padding: 10px;
+}
+
+#search {
+  padding: 10px 160px 415px 10px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+p {
+  text-align: center;
+}
