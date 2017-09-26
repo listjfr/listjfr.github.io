@@ -31,6 +31,15 @@ permalink: text-compare
         });
         $("#source").html(replace_html);
       });
+      
+      $("#swap").click(function() {
+        var sourceText = $("#source").text();
+        var searchText = $("#search").val();
+        
+        $("#source").text() = searchText;
+        $("#search").val() = searchText;
+      });
+      
     });
   </script>
 </head>
@@ -44,5 +53,7 @@ permalink: text-compare
     <p>Search</p>
     <textarea id="search"></textarea>
   </div>
+  
+  <button id="swap">&#8646;</button>
 </body>
 </html>
