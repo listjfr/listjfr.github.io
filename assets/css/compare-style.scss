@@ -41,6 +41,9 @@ body {
 .match-count {
   float: right;
   margin: 20px;
+  p {
+   display: inline-block; 
+  }
 }
 
 #swap {
