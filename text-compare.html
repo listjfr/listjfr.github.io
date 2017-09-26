@@ -30,6 +30,8 @@ permalink: text-compare
           return "<span class='highlight'>" + match + "</span>";
         });
         $("#source").html(replace_html);
+        var count = sourceText.match(reg).length;
+        $("#count").text(count);
       });
       
       $("#swap").click(function() {
@@ -64,6 +66,8 @@ permalink: text-compare
   <div class="container">
     <p>Search</p>
     <textarea id="search"></textarea>
+    <p id="count"></p>
+    <p>matches</p>
   </div>
 </body>
 </html>
