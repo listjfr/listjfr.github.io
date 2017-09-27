@@ -174,25 +174,26 @@ button.accordion {
   background-color: transparent;
   padding: 10px;
   transition: 0.4s;
-  .active, :hover {
+}
+
+button.accordion.active, button.accordion:hover {
     background-color: white;
     color: black;
     opacity: 0.6;
-  }
-  :after {
-    content: '\02795';
-    float: right;
-  }
-  .active:after {
+}
+
+button.accordion:after {
+  content: '\02795';
+  float: right;
+}
+button.accordion.active:after {
     content: "\2796";
   }
-}
 
 .accordion-panel {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  display: none;
   padding: 10px;
 }
 
