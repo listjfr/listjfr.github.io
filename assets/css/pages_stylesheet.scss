@@ -185,11 +185,12 @@ button.accordion.active, button.accordion:hover {
 }
 
 button.accordion::after {
-  content: '\02795';
+  content: '+';
   float: right;
+  padding-right: 20%;
 }
 button.accordion.active::after {
-    content: "\2796";
+    content: "-";
   }
 
 .accordion-panel {
@@ -231,8 +232,11 @@ footer {
   }
 }
 
-//for screens less than 1100px width
+//for screens less than 1380px width
 @media only screen and (max-width: 1380px) {
+  button.accordion::after {
+    padding-right: 0%;
+  }
   .navbar {
     display: inline;
   }
