@@ -24,19 +24,6 @@ html {
   top: 0px;
   left: 0px;
 }
-  
-#home-title {
-  font-size: 1000%;
-  width: 100%;
-  text-align: center;
-  padding-top: 300px;
-}
-   
-#home-description {
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
-}
 
 .navbar {
   position: fixed;
@@ -74,24 +61,6 @@ html {
   text-align: center;
 }
 
-#side-navbar {
-    ul {
-      list-style: none;
-      text-align: left;
-      padding-left: 20px;
-      a { 
-        text-decoration: none; 
-        color: white;
-        li {
-         padding: 10px 5px;
-         font-size: 20px;
-         max-width: 200px;
-          min-width: 170px;
-         }
-      }
-    }
-  }
-
 .subtitle, .body-text, .id-card {
   display: inline-block;
   vertical-align:top;
@@ -104,7 +73,22 @@ html {
   overflow: auto;
   padding-left: 10px;
 }
+  
+//home page
+#home-title {
+  font-size: 1000%;
+  width: 100%;
+  text-align: center;
+  padding-top: 300px;
+}
+   
+#home-description {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
 
+//about page
 #about-pic {
   height: 150px;
   width: 150px;
@@ -127,6 +111,25 @@ html {
     padding: 0 10px;
   }
 }
+
+//resume page
+#side-navbar {
+    ul {
+      list-style: none;
+      text-align: left;
+      padding-left: 20px;
+      a { 
+        text-decoration: none; 
+        color: white;
+        li {
+         padding: 10px 5px;
+         font-size: 20px;
+         max-width: 200px;
+          min-width: 170px;
+         }
+      }
+    }
+  }
 
 .info-body {
  text-align: left;
@@ -153,7 +156,39 @@ h1 {
  vertical-align: top;
 }
 
+//projects page
+.accordion-title {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  background-color: #131313;
+  color: white;
+}
+
+button.accordion {
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  color: white;
+  background-color: transparent;
+  padding: 10px;
+  transition: 0.4s;
+  .active, :hover {
+    background-color: white;
+    color: black;
+    opacity: 0.6;
+  }
+}
+
+.accordion-panel {
+  display: none;
+  padding: 10px;
+}
+
+//all
  #top {
+    cursor: pointer;
     text-align: center;
     height: 70px;
     width: 70px;
