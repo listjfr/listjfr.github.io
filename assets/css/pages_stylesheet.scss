@@ -179,6 +179,13 @@ button.accordion {
     color: black;
     opacity: 0.6;
   }
+  :after {
+    content: '\02795';
+    float: right;
+  }
+  .active:after {
+    content: "\2796";
+  }
 }
 
 .accordion-panel {
