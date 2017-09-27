@@ -187,7 +187,6 @@ button.accordion.active, button.accordion:hover {
 button.accordion::after {
   content: '+';
   float: right;
-  padding-right: 20%;
 }
 button.accordion.active::after {
     content: "-";
