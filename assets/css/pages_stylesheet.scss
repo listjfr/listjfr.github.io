@@ -172,8 +172,10 @@ button.accordion {
   border: none;
   color: white;
   background-color: transparent;
-  padding: 10px;
+  padding: 10px 20px;
   transition: 0.4s;
+  outline: none;
+  font-soze: 20px;
 }
 
 button.accordion.active, button.accordion:hover {
