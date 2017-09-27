@@ -13,16 +13,21 @@ body {
   color: black;
 }
 
+.title {
+ background-color: #383838;
+  margin: 20px 0 0 0;
+}
+
 #source {
   border: 1px solid black;
   width: 100%;
   min-height: 500px;
-  padding: 10px;
+  padding: 10px 0;
   background-color: dimgrey;
 }
 
 #search {
-  padding: 10px;
+  padding: 10px 0;
   background-color: dimgrey;
   border: 1px solid black;
   width: 100%;
@@ -40,7 +45,6 @@ body {
 
 .match-count {
   float: right;
-  margin: 20px;
   p {
    display: inline-block; 
   }
@@ -53,7 +57,7 @@ body {
   border: none;
   font-size: 25px;
   border-radius: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 p {
