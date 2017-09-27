@@ -59,6 +59,20 @@ permalink: /projects/
             $("#top-text").css("color", "white");
           });
           
+          //accordion
+          var i;
+          var acc = document.getElementsByClassName("accordion");
+          $(".accordion").click(function() {
+            $(this).toggleClass(".active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            }
+            else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+          
           //side navbar functions
           $("#side-navbar ul a li").hover(function() {
             $(this).css("background-color", "white");
@@ -144,8 +158,10 @@ permalink: /projects/
       <div class="body-text">
         <div class="accordion-title">Engineering</div>
         <button class="accordion" id="RISE">RISE 2017 Poster</button>
+        <div class="accordion-panel">some text here</div>
         <div class="accordion-title">Coding</div>
         <button class="accordion" id="code">Personal Website (HTML, CSS, JS)</button>
+        <div class="accordion-panel">some text here</div>
       </div>
     </body>
     
