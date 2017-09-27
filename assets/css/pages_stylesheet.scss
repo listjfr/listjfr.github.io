@@ -68,9 +68,8 @@ html {
 }
 
 .body-text {
-  margin-top: 250px;
+  margin: 250px 60px 250px 20%;
   font-size: 20px;
-  margin-left: 20%;
   overflow: auto;
   padding-left: 10px;
 }
@@ -262,7 +261,7 @@ footer {
     margin-left: 20px
   }
   .body-text {
-    margin: 50px 0;
+    margin: 50px 60px 0 0;
   }
   .id-card {
     width: 100%;
@@ -338,7 +337,7 @@ footer {
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
   .body-text {
-    margin: 50px 0;
+    margin: 50px 60px 0 0;
   }
   .subtitle {
     margin-top: 10px;
@@ -357,6 +356,9 @@ footer {
 
 //for mobile devices smaller than 768px width
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .body-text {
+    margin: 50px 0;
+  }
   .mini-navbar {
     height: 140px;
     .menu-button-container {
