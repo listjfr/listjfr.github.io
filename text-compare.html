@@ -10,7 +10,7 @@ permalink: text-compare
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $("#search").change(function() {
+      $("#compare").click(function() {
         var sourceText = $("#source").text();
         var searchText = $("#search").val();
         var sourceArray = sourceText.trim().split(" ");
@@ -69,6 +69,10 @@ permalink: text-compare
   <div class="container">
     <p class="title">Source</p>
     <div contenteditable="true" id="source"></div>
+    <div class="match-count">
+      <p id="count"></p>
+      <p>matches</p>
+    </div>
   </div>
   
   <button id="swap">&#8646;</button>
@@ -76,10 +80,7 @@ permalink: text-compare
   <div class="container">
     <p class="title">Search</p>
     <textarea id="search"></textarea>
-    <div class="match-count">
-      <p id="count"></p>
-      <p>matches</p>
-    </div>
+    <button id="compare">Compare</button>
   </div>
 </body>
 </html>
