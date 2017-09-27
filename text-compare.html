@@ -10,6 +10,7 @@ permalink: text-compare
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
+      //run compare search
       $("#compare").click(function() {
         var sourceText = $("#source").text();
         var searchText = $("#search").val();
@@ -44,6 +45,18 @@ permalink: text-compare
         $("#count").text(count);
       });
       
+      //hover compare button function
+      $("#compare").hover(function() {
+        $(this).css("background-color", "white");
+        $(this).css("color", "black");
+        $(this).css("opacity", "0.6");
+      }, function() {
+        $(this).css("background-color", "#383838");
+        $(this).css("color", "white");
+        $(this).css("opacity", "1");
+      });
+      
+      //swap action
       $("#swap").click(function() {
         var sourceText = $("#source").text();
         var searchText = $("#search").val();
@@ -52,6 +65,7 @@ permalink: text-compare
         $("#search").val(sourceText);
       });
       
+      //hover swap button function
       $("#swap").hover(function() {
         $(this).css("background-color", "white");
         $(this).css("color", "black");
