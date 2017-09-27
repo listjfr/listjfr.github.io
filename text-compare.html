@@ -32,7 +32,7 @@ permalink: text-compare
         $("#source").html(replace_html);
         
         var count = 0;  
-        if (searchText == "") {
+        if (searchText == "" || sourceText == "") {
           count = 0;
         }
         else if (sourceText.match(reg) == null) {
