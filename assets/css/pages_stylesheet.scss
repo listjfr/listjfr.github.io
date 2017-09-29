@@ -335,7 +335,7 @@ footer {
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
   .body-text {
-    margin: 50px 60px 0 0;
+    margin: 50px 17%;
   }
   .subtitle {
     margin-top: 10px;
@@ -355,8 +355,7 @@ footer {
 //for mobile devices smaller than 768px width
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .body-text {
-    margin: 50px 17%;
-    font-size: 40px;
+    margin: 50px 0;
   }
   button.accordion {
     font-size: 40px;
