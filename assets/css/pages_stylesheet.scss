@@ -312,18 +312,18 @@ footer {
 .navbar2 {
     position: fixed;
     left: 0px;
-    display: none;
-    width: 220px;
     margin: 0;
     top: 55px;
     height: 100%;
-    transition: 0.5s;
+    transition: width 0.3s ease-out;
     ul {
       float: left;
       background-color: black;
       padding: 10px;
       height: 100%;
-      width: 220px;
+      width: 0;
+      overflow: hidden;
+      max-width: 220px;
       a {
          text-decoration: none;
          margin: 0 10px;
