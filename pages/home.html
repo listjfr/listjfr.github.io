@@ -103,10 +103,16 @@ permalink: /home/
             $(".navbar2").css("display", "none");
           });
     
-            $(".menu-button").click(function() {
-                $(".navbar2").toggle();
-                $(".menu-button").css("opacity", "0.6");
-            });
+          $(".menu-button").click(function() {
+            var navbar2 = $(".navbar2");
+            var maxWidth = navbar2.css("maxWidth");
+            if (navbar2.css("width") > "0px") {
+              navbar2.css("width", "0");
+            }
+            else {
+              navbar2.css("width", maxWidth);
+            }
+          });
           
         });    
       </script>
