@@ -276,6 +276,7 @@ footer {
   }
 }
 
+//mini navbar
 .mini-navbar {
   z-index: 5;
   visibility: hidden;
@@ -315,10 +316,12 @@ footer {
     width: 220px;
     margin: 0;
     top: 55px;
+    height: 100%;
     ul {
       float: left;
       background-color: black;
-      padding: 10px 20px;
+      padding: 10px 60px;
+      height: 100%;
       a {
          text-decoration: none;
          margin: 0 10px;
@@ -368,8 +371,11 @@ footer {
     .menu-button-container {
       .navbar2 {
         top: 125px;
-        ul a li {
-         font-size: 60px; 
+        ul {
+          width: 600px;
+          a li {
+            font-size: 60px; 
+          }
         }
       }
       .menu-button {
