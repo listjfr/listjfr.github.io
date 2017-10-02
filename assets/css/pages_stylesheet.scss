@@ -316,14 +316,15 @@ footer {
     top: 55px;
     height: 100%;
     transition: width 0.3s ease-out;
+    width: 0;
+    overflow: hidden;
+    max-width: 220px;
     ul {
       float: left;
       background-color: black;
       padding: 10px;
       height: 100%;
-      width: 0;
-      overflow: hidden;
-      max-width: 220px;
+      width: 220px;
       a {
          text-decoration: none;
          margin: 0 10px;
@@ -373,6 +374,7 @@ footer {
     .menu-button-container {
       .navbar2 {
         top: 125px;
+        max-height: 400px;
         ul {
           width: 400px;
           a li {
