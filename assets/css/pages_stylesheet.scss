@@ -320,8 +320,9 @@ footer {
     ul {
       float: left;
       background-color: black;
-      padding: 10px 60px;
+      padding: 10px;
       height: 100%;
+      width: 220px;
       a {
          text-decoration: none;
          margin: 0 10px;
@@ -329,7 +330,7 @@ footer {
           display: block; 
           list-style: none;
           font-size: 20px;
-          padding: 10px 40px;
+          padding: 10px 50px;
         }
       }
     }
@@ -372,7 +373,7 @@ footer {
       .navbar2 {
         top: 125px;
         ul {
-          width: 600px;
+          width: 400px;
           a li {
             font-size: 60px; 
           }
