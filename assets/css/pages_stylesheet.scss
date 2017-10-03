@@ -402,6 +402,9 @@ footer {
 
 //for mobile devices smaller than 768px width
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .fa {
+    font-size: 100px;
+  }
   .body-text {
     margin: 50px 0;
     .accordion-title {
@@ -425,7 +428,6 @@ footer {
             left: 80px;
           }
           .fa {
-            font-size: 100px;
             bottom: 200px;
           }
         }
