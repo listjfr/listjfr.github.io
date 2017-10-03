@@ -200,6 +200,20 @@ button.accordion.active::after {
   padding-left: 20px;
 }
 
+//contact page
+.navbar-fa {
+  .fa {
+    position: absolute;
+    bottom: 70px;
+    .fa-linkedin-square {
+      left: 45px;
+    }
+    .fa-github {
+      left: 115px;
+    }
+  }
+}
+
 //social media icons
 .fa {
   text-decoration: none;
