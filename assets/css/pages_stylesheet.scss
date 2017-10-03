@@ -340,8 +340,8 @@ footer {
     max-width: 220px;
     ul {
       float: left;
-      background-color: black;
-      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.90);
+      padding: 10px 30px;
       height: 100%;
       width: 220px;
       a {
@@ -351,7 +351,8 @@ footer {
           display: block; 
           list-style: none;
           font-size: 20px;
-          padding: 10px 50px;
+          padding: 10px 20px;
+          width: 100px;
         }
       }
     }
@@ -396,8 +397,10 @@ footer {
         max-width: 400px;
         ul {
           width: 400px;
+          padding: 10px 0;
           a li {
             font-size: 60px; 
+            width: 300px;
           }
         }
       }
