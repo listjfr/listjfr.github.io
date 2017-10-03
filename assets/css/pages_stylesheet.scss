@@ -417,6 +417,18 @@ footer {
       .navbar2 {
         top: 125px;
         max-width: 400px;
+        .navbar-fa {
+          .fa-github {
+            left: 220px;
+          }
+          .fa-linkedin-square {
+            left: 80px;
+          }
+          .fa {
+            font-size: 100px;
+            bottom: 200px;
+          }
+        }
         ul {
           width: 400px;
           padding: 10px 0;
