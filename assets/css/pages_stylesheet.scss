@@ -392,6 +392,12 @@ footer {
   #home-title {
     font-size: 800%;
   }
+  .id-card {
+    margin: 0;
+    #about-pic, #quick-facts {
+      margin-top: 50px;
+    }
+  }
 }
 
 //for mobile devices smaller than 768px width
@@ -461,6 +467,7 @@ footer {
     padding-top: 600px;
   }
   .id-card {
+    margin: 0;
     #about-pic, #quick-facts {
       margin-top: 20px;
     }
