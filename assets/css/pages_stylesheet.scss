@@ -230,6 +230,20 @@ button.accordion.active::after {
   color: white;
 }
 
+.footer-fa {
+  position: absolute;
+  bottom: 0;
+  margin-right: 10px;
+  width: 100%;
+  float: right;
+  .fa-linkedin-square {
+    display: inline-block;    
+  }
+  .fa-github {
+    display: inline-block;
+  }
+}
+
 //all
  #top {
     cursor: pointer;
@@ -268,6 +282,10 @@ footer {
 
 //for screens less than 1380px width
 @media only screen and (max-width: 1380px) {
+  .footer-fa {
+    text-align: center;
+    margin: 0;
+  }
   button.accordion::after {
     padding-right: 0%;
   }
