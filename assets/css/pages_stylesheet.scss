@@ -207,6 +207,9 @@ button.accordion.active::after {
   border-left: 1px solid white;
   //border-bottom: 1px solid white;
   vertical-align: top;
+  height: 175px;
+  width: 180px;
+  margin-top: 50px;
 }
 
 .navbar-fa {
@@ -429,6 +432,11 @@ footer {
 
 //for mobile devices smaller than 768px width
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #contact-email, #contact-linkedin, #contact-github {
+    display: block;
+    height: 350px;
+    width: 380px;
+  }
   .footer-fa {
     display: none;
   }
