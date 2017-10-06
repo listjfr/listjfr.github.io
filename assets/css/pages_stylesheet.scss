@@ -235,7 +235,8 @@ button.accordion.active::after {
   bottom: 0;
   margin-right: 10px;
   width: 100%;
-  float: right;
+  right: 0;
+  text-align: right;
   .fa-linkedin-square {
     display: inline-block;    
   }
@@ -282,10 +283,6 @@ footer {
 
 //for screens less than 1380px width
 @media only screen and (max-width: 1380px) {
-  .footer-fa {
-    text-align: center;
-    margin: 0;
-  }
   button.accordion::after {
     padding-right: 0%;
   }
@@ -394,6 +391,10 @@ footer {
 
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
+  .footer-fa {
+    text-align: center;
+    margin: 10px 0;
+  }
   .body-text {
     margin: 50px 60px 0 0;
   }
@@ -420,6 +421,9 @@ footer {
 
 //for mobile devices smaller than 768px width
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .footer-fa {
+    display: none;
+  }
   .fa {
     font-size: 100px;
   }
@@ -497,6 +501,12 @@ footer {
   }
   #home-title {
     padding-top: 600px;
+  }
+  #home-description {
+    font-size: 30px;
+  }
+  footer {
+    font-size: 25px;
   }
   .id-card {
     margin: 0;
