@@ -203,9 +203,10 @@ button.accordion.active::after {
 //contact page
 #contact-email, #contact-linkedin, #contact-github {
   display: inline-block;
-  margin: 0 20px;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  padding: 0 20px;
+  border-left: 1px solid white;
+  //border-bottom: 1px solid white;
+  vertical-align: top;
 }
 
 .navbar-fa {
