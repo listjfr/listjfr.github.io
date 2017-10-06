@@ -201,15 +201,23 @@ button.accordion.active::after {
 }
 
 //contact page
-#contact-email, #contact-linkedin, #contact-github {
+#contact-pic, #contact-information {
   display: inline-block;
+}
+
+#contact-pic {
+  width: 300px;
+  height: 450px;
+  background-image: url("https://placekitten.com/300/450");
+}
+
+#contact-email, #contact-linkedin, #contact-github {
+  display: block;
   padding: 0 20px;
-  border-left: 1px solid white;
-  //border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
   vertical-align: top;
   height: 175px;
   width: 180px;
-  margin-top: 50px;
 }
 
 .navbar-fa {
@@ -435,7 +443,7 @@ footer {
   #contact-email, #contact-linkedin, #contact-github {
     display: block;
     height: 350px;
-    width: 380px;
+    width: 800px;
   }
   .footer-fa {
     display: none;
