@@ -262,10 +262,12 @@ button.accordion.active::after {
   right: 0;
   text-align: right;
   .fa-linkedin-square {
-    display: inline-block;    
+    display: inline-block;
+    margin: 0 5px;
   }
   .fa-github {
     display: inline-block;
+    margin: 0 5px;
   }
 }
 
