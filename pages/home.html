@@ -45,6 +45,10 @@ permalink: /home/
           });
           
           //top button functions
+          if ($(document).height() <= $(window).height()) {
+            $("#top").css("display", "none");
+          }
+          
            $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
