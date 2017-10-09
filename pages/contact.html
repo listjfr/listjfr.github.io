@@ -45,6 +45,10 @@ permalink: /contact/
           });
           
           //top button functions
+          if ($(document).height() <= $(window).height()) {
+            $("#top").css("display", "none");
+          }
+
            $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
@@ -171,5 +175,7 @@ permalink: /contact/
         </div>
       </div>
     </body>
-    
+    <div id="top">
+      <a><h2 id="top-text">&#8593;</h2></a>
+    </div>
 </html>
