@@ -418,8 +418,7 @@ footer {
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
   .footer-fa {
-    text-align: center;
-    margin: 10px 0;
+    display: none;
   }
   .body-text {
     margin: 50px 60px 0 0;
@@ -453,7 +452,6 @@ footer {
     height: 600px;
     width: 400px;
   }
-  
   #contact-email, #contact-linkedin, #contact-github {
     display: block;
     height: 350px;
