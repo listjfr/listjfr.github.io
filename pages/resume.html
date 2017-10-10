@@ -61,9 +61,11 @@ permalink: /resume/
               $("#top-text").css("color", "black");
             }
           }, function() {
-              $(this).css("background-color", "transparent");
-              $(this).css("opacity", "1");
-              $("#top-text").css("color", "white");
+              if ($(window).width() > 480 && window.pageYOffset !== 0) {
+                $(this).css("background-color", "transparent");
+                $(this).css("opacity", "1");
+                $("#top-text").css("color", "white");
+              }
           });          
             
           $("#top").click(function() {
