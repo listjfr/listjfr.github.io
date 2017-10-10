@@ -258,6 +258,7 @@ button.accordion.active::after {
   position: absolute;
   bottom: 0;
   margin-right: 10px;
+  margin-top: auto;
   width: 100%;
   right: 0;
   text-align: right;
@@ -295,6 +296,7 @@ button.accordion.active::after {
 
 footer {
   position: absolute;
+  margin-top: auto;
   bottom: 0px;
   width: 100%;
   text-align: center;
@@ -468,6 +470,21 @@ footer {
   }
   .body-text {
     margin: 50px 10px 0 0;
+  }
+}
+
+//for screens less than 700px height
+@media only screen and (max-height: 700px) {
+  #home-title {
+    padding-top: 200px;
+  }
+  footer {
+    position: static;
+    margin-top: 250px;
+  }
+  .footer-fa {
+    position: static;
+    margin-top: -60px;
   }
 }
 
