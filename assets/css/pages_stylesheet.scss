@@ -514,9 +514,11 @@ footer {
   .subtitle {
     font-size: 60px;
     margin-top: 20px;
+    outline: transparent;
   }
   #top {
     display: none;
+    visibility: hidden;
   }
   h1 {
     font-size: 100px;
