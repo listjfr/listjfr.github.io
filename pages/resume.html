@@ -46,7 +46,7 @@ permalink: /resume/
           
           //top button functions
           $(window).scroll(function() {
-            if ($(window).width() > 480) {
+            if ($(window).width() > 480 && window.pageYOffset !== 0) {
               $("#top").css("display", "inline");
             }
           });
