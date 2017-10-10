@@ -55,19 +55,25 @@ permalink: /projects/
             }
           });
           
-           $("#top").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, 800);
-            return false;
-            });
-          
           $("#top").hover(function() {
-            $(this).css("background-color", "white");
-            $(this).css("opacity", "0.5");
-            $("#top-text").css("color", "black");
+            if ($(window).width() > 480 && window.pageYOffset !== 0) {
+              $(this).css("background-color", "rgba(255, 255, 255, 0.5)");
+              $(this).css("border-color", "transparent");
+              $("#top-text").css("color", "black");
+            }
           }, function() {
-            $(this).css("background-color", "transparent");
-            $(this).css("opacity", "1");
-            $("#top-text").css("color", "white");
+              if ($(window).width() > 480 && window.pageYOffset !== 0) {
+                $(this).css("background-color", "transparent");
+                $(this).css("border-color", "white");
+                $("#top-text").css("color", "white");
+              }
+          });          
+            
+          $("#top").click(function() {
+            if ($(window).width() > 480 && window.pageYOffset !== 0) {
+              $("html, body").animate({ scrollTop: 0 }, 800);
+              return false;
+            }
           });
           
           //accordion
