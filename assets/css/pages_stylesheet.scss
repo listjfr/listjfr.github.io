@@ -505,6 +505,9 @@ footer {
     position: static;
     margin-top: -60px;
   }
+  .mini-navbar .menu-button-container .navbar2 ul {
+    overflow: scroll;
+  }
 }
 
 //for mobile devices smaller than 768px width
