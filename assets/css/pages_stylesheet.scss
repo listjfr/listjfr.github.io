@@ -273,7 +273,8 @@ button.accordion.active::after {
 
 //all
  #top {
-    transition: display 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1;
     cursor: pointer;
     display: none;
     text-align: center;
