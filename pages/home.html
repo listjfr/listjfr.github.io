@@ -46,8 +46,11 @@ permalink: /home/
           
           //top button functions
           $(window).scroll(function() {
-            if ($(window).width() > 480) {
-              $("#top").css("display", "inline");
+            if ($(window).width() > 480 && window.pageYOffset !== 0) {
+              $("#top").css("opacity", "1");
+            }
+            else {
+              $("#top").css("opacity", "0");
             }
           });
           
