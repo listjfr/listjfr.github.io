@@ -230,6 +230,7 @@ button.accordion.active::after {
 }
 
 .navbar-fa {
+  display: inline;
   .fa {
     position: absolute;
     bottom: 70px;
@@ -505,8 +506,14 @@ footer {
     position: static;
     margin-top: -60px;
   }
-  .mini-navbar .menu-button-container .navbar2 ul {
-    overflow: scroll;
+  .mini-navbar .menu-button-container .navbar2 {
+    ul {
+      overflow: auto;
+      height: 70%;
+    }
+    .navbar-fa {
+      display: none;
+    }
   }
 }
 
