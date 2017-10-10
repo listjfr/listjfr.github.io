@@ -629,6 +629,16 @@ footer {
   }
   .id-card {
     margin: 0;
+    height: 550px;
+    #about-pic {
+      height: 400px;
+      width: 400px;
+      background-size: cover;
+    }
+    #quick-facts {
+      height: 450px;
+      wdith: 450px;
+    }
     #about-pic, #quick-facts {
       margin-top: 20px;
     }
