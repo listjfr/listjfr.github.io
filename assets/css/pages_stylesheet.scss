@@ -484,7 +484,22 @@ footer {
   }
   footer {
     position: static;
-    margin-top: 250px;
+    margin-top: 220px;
+  }
+  .footer-fa {
+    position: static;
+    margin-top: -66px;
+  }
+}
+
+//for screens less than 500px height
+@media only screen and (max-height: 500px) {
+  #home-title {
+    padding-top: 150px;
+  }
+  footer {
+    position: static;
+    margin-top: 220px;
   }
   .footer-fa {
     position: static;
