@@ -45,10 +45,13 @@ permalink: /about/
           });
           
           //top button functions
+          //if window bigger than 480px (mobile screen), show top button on scroll
           $(window).scroll(function() {
-            $("#top").css("display", "inline");
+            if ($(window).width() > 480) {
+              $("#top").css("display", "inline");
+            }
           });
-
+          
           $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
