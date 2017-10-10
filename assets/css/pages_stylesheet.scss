@@ -276,7 +276,7 @@ button.accordion.active::after {
     transition: opacity 0.3s;
     opacity: 0;
     cursor: pointer;
-    display: none;
+    display: inline;
     text-align: center;
     height: 50px;
     width: 50px;
