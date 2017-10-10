@@ -45,13 +45,15 @@ permalink: /about/
           });
           
           //top button functions
-          if ($(document).height() <= $(window).height()) {
-            $("#top").css("display", "none");
-          }
-          else {
-            $("#top").css("display", "inline");
-          }
-          
+          $(window).resize(function() {
+            if ($(document).height() <= $(window).height()) {
+              $("#top").css("display", "none");
+            }
+            else {
+              $("#top").css("display", "inline");
+            }
+          });
+
            $("#top").click(function() {
             $("html, body").animate({ scrollTop: 0 }, 800);
             return false;
