@@ -48,9 +48,11 @@ permalink: /resume/
           $(window).scroll(function() {
             if ($(window).width() > 480 && window.pageYOffset !== 0) {
               $("#top").css("display", "inline");
+              $("#top").css("opacity", "1");
             }
             else {
               $("#top").css("display", "none");
+              $("#top").css("opacity", "0");
             }
           });
           
