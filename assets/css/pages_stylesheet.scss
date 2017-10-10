@@ -13,6 +13,10 @@ html {
   z-index: 1;
 }
 
+body {
+  margin: 0;
+}
+
 .overlay {
   opacity: 0.6;
   z-index: -1;
