@@ -311,6 +311,10 @@ footer {
 
 //for screens less than 1380px width
 @media only screen and (max-width: 1380px) {
+  #contact-pic {
+    height: 350px;
+    width: 300px;
+  }
   button.accordion::after {
     padding-right: 0%;
   }
@@ -419,6 +423,10 @@ footer {
 
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
+  #contact-pic {
+    height: 250px;
+    width: 200px;
+  }
   .footer-fa {
     display: none;
   }
@@ -443,6 +451,13 @@ footer {
     #about-pic, #quick-facts {
       margin-top: 50px;
     }
+  }
+}
+
+//for screens less than 497px width
+@media only screen and (max-width: 497px) {
+  .body-text {
+    margin: 50px 10px 0 0;
   }
 }
 
