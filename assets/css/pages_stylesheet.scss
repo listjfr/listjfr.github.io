@@ -500,18 +500,18 @@ footer {
   }
 }
 
-//for screens less than 700px height
-@media only screen and (max-height: 700px) {
+//for screens less than 750px height
+@media only screen and (max-height: 750px) {
   #home-title {
     padding-top: 200px;
   }
   footer {
     position: static;
-    margin-top: 220px;
+    margin-top: 290px;
   }
   .footer-fa {
     position: static;
-    margin-top: -66px;
+    margin-top: -61px;
   }
 }
 
