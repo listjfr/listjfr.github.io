@@ -480,6 +480,17 @@ footer {
   .body-text {
     margin: 50px 10px 0 0;
   }
+  .id-card {
+    #quick-facts {
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+    }
+    #about-pic {
+      display: block;
+      margin-top: 0;
+    }
+  }
 }
 
 //for screens less than 700px height
