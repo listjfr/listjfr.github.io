@@ -363,6 +363,7 @@ footer {
        text-align: left;
        vertical-align: top;
        margin-left: 20px;
+       margin-right: 0;
        width: 40%;
        border-top: 1px solid white;
        border-bottom: 1px solid white;
@@ -459,8 +460,11 @@ footer {
     font-size: 800%;
   }
   .id-card {
-    margin: 0 10px;
-    display: inline;
+    margin: 0;
+    display: inline-block;
+    #quick-facts {
+      margin-left: 60px;
+    }
     #about-pic, #quick-facts {
       margin-top: 50px;
     }
