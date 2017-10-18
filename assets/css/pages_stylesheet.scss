@@ -138,6 +138,7 @@ body {
 
 .info-body {
  text-align: left;
+ width: 100%;
  //border-top: 1px solid white;
 }
 
@@ -437,9 +438,17 @@ footer {
 
 //for screens less than 768px width
 @media only screen and (max-width: 768px) {
-  #contact-pic {
-    height: 250px;
-    width: 200px;
+  .info-body {
+    #contact-pic {
+      width: 50%;
+      height: 300px;
+      margin: 0 25%;
+    }
+    #contact-information {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   .footer-fa {
     display: none;
@@ -487,6 +496,18 @@ footer {
   }
   .body-text {
     margin: 50px 10px 0 0;
+  }
+  .info-body {
+    #contact-pic {
+      width: 100%;
+      height: 350px;
+      margin: 0;
+    }
+    #contact-information {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
   .id-card {
     #quick-facts {
