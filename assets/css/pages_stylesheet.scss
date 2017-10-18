@@ -448,6 +448,10 @@ footer {
       width: 100%;
       margin: 0 auto;
       text-align: center;
+      #contact-email, #contact-linkedin, #contact-github {
+        margin: 0 auto;
+        
+      }
     }
   }
   .footer-fa {
