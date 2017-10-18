@@ -221,6 +221,7 @@ button.accordion.active::after {
   height: 600px;
   background-image: url("https://placekitten.com/g/400/600");
   margin: 0 50px;
+  display: inline-block;
 }
 
 #contact-email, #contact-linkedin, #contact-github {
@@ -324,9 +325,12 @@ footer {
   #contact-pic {
     height: 350px;
     width: 300px;
+    display: block;
+    margin: 0 auto;
   }
   #contact-information {
     width: 100%;
+    text-align: center;
     #contact-email, #contact-linkedin, #contact-github {
         margin: 0 auto;
     }
