@@ -325,6 +325,12 @@ footer {
     height: 350px;
     width: 300px;
   }
+  #contact-information {
+    width: 100%;
+    #contact-email, #contact-linkedin, #contact-github {
+        margin: 0 auto;
+    }
+  }
   button.accordion::after {
     padding-right: 0%;
   }
@@ -450,7 +456,6 @@ footer {
       text-align: center;
       #contact-email, #contact-linkedin, #contact-github {
         margin: 0 auto;
-        
       }
     }
   }
