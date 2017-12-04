@@ -44,18 +44,19 @@ body {
     a {
       text-decoration: none;
       margin: 0px 10px;
+      li {
+        list-style: none;
+        font-size: 15px;
+        display: inline-block;
+        padding: 10px 20px;
+        :hover {
+          color: rgba(255,255,255,0.39);
+        }
       }
-  }
-  
-  li {
-    list-style: none;
-    font-size: 15px;
-    display: inline-block;
-    padding: 10px 20px;
-    :hover {
-      color: rgba(255,255,255,0.39);
     }
   }
+  
+  
 }
 
 .subtitle {
